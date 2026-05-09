@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for Fasting Buddy — a privacy-first intermittent fasting tracker. All data stays on your device." />
+  <meta name="theme-color" content="#0284C7" />
+  <title>Privacy Policy — Fasting Buddy</title>
+  <style>
+    :root {
+      --background: #F8FAFC;
+      --card: #FFFFFF;
+      --primary: #0284C7;
+      --primary-light: #0EA5E9;
+      --primary-muted: rgba(2, 132, 199, 0.08);
+      --text: #0F172A;
+      --text-secondary: #475569;
+      --text-muted: #94A3B8;
+      --border-light: #F1F5F9;
+      --shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+      --shadow-lifted: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: #fff;
+      border-radius: 20px;
+      padding: 36px 28px;
+      box-shadow: var(--shadow-lifted);
+      margin-bottom: 28px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      opacity: 0.92;
+      margin-bottom: 10px;
+    }
+
+    .brand-mark {
+      width: 28px; height: 28px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.18);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .updated { font-size: 13px; opacity: 0.85; margin: 0; }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 16px;
+    }
+
+    .lead { font-size: 17px; color: var(--text); margin: 0; }
+
+    h2 {
+      font-size: 20px; font-weight: 700; color: var(--text);
+      margin: 0 0 12px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    h2 .pill {
+      display: inline-block;
+      width: 6px; height: 22px;
+      border-radius: 3px;
+      background: var(--primary);
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 0 0 10px;
+    }
+
+    ul { margin: 8px 0 0; padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    li::marker { color: var(--primary); }
+
+    .callout {
+      background: var(--primary-muted);
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-top: 16px;
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-top: 36px;
+    }
+    footer .sep { margin: 0 6px; opacity: 0.5; }
+
+    @media (max-width: 540px) {
+      .page { padding: 20px 14px 60px; }
+      .hero { padding: 28px 22px; border-radius: 16px; }
+      h1 { font-size: 26px; }
+      .card { padding: 22px; border-radius: 14px; }
+      h2 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="brand">
+        <span class="brand-mark">F</span>
+        <span>Fasting Buddy</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: March 2026</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="pill"></span>Your Privacy Matters</h2>
+      <p class="lead">Fasting Buddy is built with a privacy-first approach. All your data stays on your device.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="pill"></span>Data Storage</h2>
+      <ul>
+        <li>All fasting records, weight logs, streaks, and achievements are stored locally on your device using AsyncStorage.</li>
+        <li>No data is sent to external servers.</li>
+        <li>No user account or registration is required.</li>
+      </ul>
+      <div class="callout">
+        We do not collect, transmit, or sell your personal data. Period.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2><span class="pill"></span>AI Coach</h2>
+      <p>When you use the AI Fasting Coach feature, your questions are sent to Google's Gemini API for processing. No personal health data beyond what you type in your question is shared. Google's privacy policy applies to API interactions.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="pill"></span>Permissions</h2>
+      <ul>
+        <li><strong>Notifications</strong> — Used only for fasting reminders you set.</li>
+        <li><strong>Vibration</strong> — Used for haptic feedback on milestones.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2><span class="pill"></span>Data Deletion</h2>
+      <p>You can delete all your data at any time from <strong>Profile → Settings → Reset All Data</strong>. Uninstalling the app also removes all locally stored data.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="pill"></span>Children's Privacy</h2>
+      <p>Fasting Buddy is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us information, please contact us so we can address it.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="pill"></span>Changes to This Policy</h2>
+      <p>We may update this privacy policy from time to time. The "Last updated" date at the top of this page reflects the most recent revision. Continued use of the app after changes are posted constitutes acceptance of the updated policy.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="pill"></span>Contact</h2>
+      <p>If you have questions about this privacy policy, please contact us at <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+      <span>&copy; 2026 Fasting Buddy</span>
+      <span class="sep">·</span>
+      <span>All rights reserved</span>
+    </footer>
+  </main>
+</body>
+</html>
