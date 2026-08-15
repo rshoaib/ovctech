@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <title>Privacy Policy — Crypto Trade Check</title>
+  <style>
+    :root { --green: #1F8A56; --green-dark: #0F5C39; --ink: #1f2328; --muted: #60646c; --line: #e6e8eb; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.65;
+      background: #ffffff;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 72px; }
+    header h1 { font-size: 1.9rem; margin: 0 0 6px; color: var(--green-dark); }
+    .updated { color: var(--muted); font-size: 0.95rem; margin: 0 0 28px; }
+    h2 {
+      font-size: 1.2rem; margin: 34px 0 10px; color: var(--green-dark);
+      border-bottom: 2px solid var(--line); padding-bottom: 6px;
+    }
+    p, li { font-size: 1rem; }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    a { color: var(--green); }
+    .term { font-weight: 600; }
+    code { background: #f0f0f3; padding: 2px 6px; border-radius: 6px; font-size: 0.92em; }
+    .notice {
+      margin: 26px 0 0; padding: 14px 16px; border-left: 4px solid var(--green);
+      background: #f4f9f6; border-radius: 0 8px 8px 0;
+    }
+    footer {
+      margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line);
+      color: var(--muted); font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>📊 Crypto Trade Check — Privacy Policy</h1>
+      <p class="updated">Last updated: August 15, 2026</p>
+    </header>
+
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        Crypto Trade Check ("we", "our", "the app") is a free crypto market-analysis tool
+        developed and published by <strong>Rizwan Shoaib</strong>. The app reads
+        <strong>public cryptocurrency market data</strong> from Binance and runs a set of
+        transparent technical checks <strong>on your device</strong> to produce a
+        Long / Short / No-trade read. It has no user accounts, no ads, and no analytics.
+        This policy explains exactly what the app does and does not do with data.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data We Access</h2>
+      <ul>
+        <li>
+          <span class="term">Public market data</span> — the app connects to Binance's
+          <strong>public, keyless</strong> USD-M futures market-data endpoints to read candlestick
+          history, prices, funding, open interest and order-book depth for the trading pair you
+          select. These are anonymous, read-only public price feeds. No personal information is
+          sent with these requests.
+        </li>
+        <li>
+          <span class="term">Your Binance API key (optional)</span> — you may choose to paste a
+          <strong>read-only</strong> Binance API key so the app can show your own open position and
+          balance alongside the market read. This is entirely optional; every other feature works
+          without it. See the dedicated section below.
+        </li>
+        <li>
+          <span class="term">Settings and history you create</span> — the pair you are watching,
+          your alert preferences, favourites, and the trade journal you build up are stored
+          <strong>locally on your device</strong>.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Your Binance API Key</h2>
+      <p>
+        If you enter one, the key and secret are stored using your device's hardware-backed secure
+        storage (Android Keystore), <strong>not</strong> in ordinary app storage.
+      </p>
+      <ul>
+        <li>The key is used <strong>only</strong> to sign read requests sent directly from your
+          phone to Binance, for two endpoints: your position risk and your wallet balance.</li>
+        <li>The key and secret are <strong>never sent to us</strong>, never sent to our server, and
+          never sent to any third party other than Binance itself.</li>
+        <li>The app <strong>cannot place, modify, or cancel orders</strong>, cannot withdraw or
+          transfer funds, and cannot hold or custody any asset. It has no wallet.</li>
+        <li>The app asks you to create the key with <strong>reading permission only</strong> — no
+          trading and no withdrawal rights.</li>
+        <li>You can remove the key at any time from the app's Binance settings screen, which deletes
+          it from secure storage.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Alert Notifications and Our Server</h2>
+      <p>
+        The app can notify you when the market read changes. Android aggressively suspends
+        background work, so if you switch alerts on, the app also registers with a small backend we
+        run (Google Firebase, project "Riz Apps") which repeats the same check and sends the
+        notification by push.
+      </p>
+      <p><span class="term">What the app sends when alerts are switched on:</span></p>
+      <ul>
+        <li>Your device's <strong>Firebase Cloud Messaging registration token</strong> — a device
+          identifier that lets Google's push service deliver a notification to your phone.</li>
+        <li>The trading pair you are watching and your alert preference toggles.</li>
+        <li>A confidence-calibration mapping derived from your own trade journal, so the server
+          thresholds against the same number the app shows you.</li>
+        <li>Your platform (Android) and the app version.</li>
+      </ul>
+      <p><span class="term">What it never sends:</span> your name, email, phone number, location,
+        contacts, advertising ID, your Binance API key or secret, your balance, or your positions.
+        We have no way to identify you personally from what is stored.</p>
+      <p>
+        <span class="term">If you never switch alerts on, nothing is ever sent to our server.</span>
+        Switching alerts off tells the server to stop, and the app stops registering.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data We Do NOT Collect</h2>
+      <ul>
+        <li>❌ We do NOT collect your personal information (name, email, phone number)</li>
+        <li>❌ We do NOT have user accounts, logins, or profiles</li>
+        <li>❌ We do NOT track your location</li>
+        <li>❌ We do NOT sell or share your data with anyone</li>
+        <li>❌ We do NOT serve ads of any kind</li>
+        <li>❌ We do NOT use an advertising ID</li>
+        <li>❌ We do NOT use third-party analytics or crash-reporting SDKs</li>
+        <li>❌ We do NOT receive, store, or transmit your exchange API key, secret, balance, or positions</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Local Storage</h2>
+      <p>The app stores the following on your device:</p>
+      <ul>
+        <li>The active trading pair, your favourites and recent pairs</li>
+        <li>Your alert preferences and alert state</li>
+        <li>Your trade journal and any position you record</li>
+        <li>Cached market calibration data, so the app does not re-download it every run</li>
+        <li>Your Binance API key and secret, if you entered one, in secure hardware-backed storage</li>
+      </ul>
+      <p>
+        You can clear all of it at any time by clearing the app's data in your device settings, or
+        by uninstalling the app.
+      </p>
+    </section>
+
+    <section>
+      <h2>Permissions</h2>
+      <ul>
+        <li><span class="term">Internet</span> — Required. Used to read Binance's public market-data
+          endpoints, to read your own account if you supplied a key, and to register for alerts if
+          you switched them on. It is not used for advertising or analytics.</li>
+        <li><span class="term">Notifications</span> — Optional. Used only to alert you about the
+          trading pair you chose.</li>
+        <li><span class="term">Run at startup / Wake lock / Vibrate</span> — Used so scheduled alert
+          checks and their notifications work reliably.</li>
+      </ul>
+      <p>The app does not request or use an advertising ID.</p>
+    </section>
+
+    <section>
+      <h2>Data Retention &amp; Deletion</h2>
+      <p><span class="term">On your device:</span> local data stays for as long as the app is
+        installed. There is no expiration.</p>
+      <p><span class="term">On our server:</span> if you switched alerts on, one record keyed by
+        your push token holds the items listed above. Switching alerts off stops it being used, and
+        uninstalling the app invalidates the push token.</p>
+      <p><span class="term">How to delete your data:</span></p>
+      <ul>
+        <li>Go to <code>Settings → Apps → Crypto Trade Check → Storage → Clear Data</code> to erase
+          all locally stored app data including any saved API key, or</li>
+        <li>Uninstall the app, which permanently deletes all associated data from your device, or</li>
+        <li>Email <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a> to request deletion
+          of the server-side alert registration.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Not Financial Advice</h2>
+      <div class="notice">
+        <p style="margin:0">
+          Crypto Trade Check is an <strong>information tool only</strong>. The reads it shows are
+          the output of standard technical calculations applied to public price data — they are
+          <strong>not financial, investment, or trading advice</strong>, and they are not a
+          recommendation to buy or sell anything. Rizwan Shoaib is not a licensed financial adviser
+          or broker. The app cannot trade on your behalf. Cryptocurrency and leveraged futures
+          trading carry substantial risk, including the total loss of your funds. Past price
+          behaviour does not predict future results. Any decision you make is your own, and you
+          should consider seeking advice from a qualified professional.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>Our app does not knowingly collect data from children under 13. The app is intended for a
+        general adult audience aged 18 and over.</p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this policy from time to time. The updated version will be indicated by the
+        "Last updated" date at the top.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>If you have questions about this privacy policy, please contact us at:</p>
+      <p>📧 <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a><br />
+        Developer: <strong>Rizwan Shoaib</strong></p>
+    </section>
+
+    <footer>
+      © 2026 Crypto Trade Check. All rights reserved.<br />
+      This privacy policy is hosted as part of the Crypto Trade Check application.
+    </footer>
+  </div>
+</body>
+</html>
