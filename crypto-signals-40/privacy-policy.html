@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <title>Privacy Policy — Crypto Signals 40</title>
+  <style>
+    :root { --green: #1F8A56; --green-dark: #0F5C39; --ink: #1f2328; --muted: #60646c; --line: #e6e8eb; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.65;
+      background: #ffffff;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 72px; }
+    header h1 { font-size: 1.9rem; margin: 0 0 6px; color: var(--green-dark); }
+    .updated { color: var(--muted); font-size: 0.95rem; margin: 0 0 28px; }
+    h2 {
+      font-size: 1.2rem; margin: 34px 0 10px; color: var(--green-dark);
+      border-bottom: 2px solid var(--line); padding-bottom: 6px;
+    }
+    p, li { font-size: 1rem; }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    a { color: var(--green); }
+    .term { font-weight: 600; }
+    code { background: #f0f0f3; padding: 2px 6px; border-radius: 6px; font-size: 0.92em; }
+    .notice {
+      margin: 26px 0 0; padding: 14px 16px; border-left: 4px solid var(--green);
+      background: #f4f9f6; border-radius: 0 8px 8px 0;
+    }
+    footer {
+      margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line);
+      color: var(--muted); font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>📈 Crypto Signals 40 — Privacy Policy</h1>
+      <p class="updated">Last updated: August 24, 2026</p>
+    </header>
+
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        Crypto Signals 40 ("we", "our", "the app") is a free crypto market-signal reader
+        developed and published by <strong>Rizwan Shoaib</strong>. It reads
+        <strong>public cryptocurrency market data</strong> for 40 liquid trading pairs and derives
+        trading levels from it using standard technical calculations. It has no accounts, no ads,
+        and collects no personal information.
+      </p>
+      <p>
+        Unlike a purely on-device app, this one is backed by a <strong>small server component</strong>
+        (Google Cloud Functions and Firebase Firestore) that reads the same public market data on a
+        schedule so that signals are produced even while the app is closed. This policy explains
+        exactly what that server does and does not hold.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data We Access</h2>
+      <ul>
+        <li>
+          <span class="term">Public market data</span> — the app and its server connect to
+          Binance's <strong>public, keyless</strong> market-data endpoints to read candlestick
+          history and live prices for a fixed list of 40 well-known trading pairs. These are
+          anonymous, read-only public price feeds. <strong>No API key, no account, and no personal
+          or device identifier is sent to Binance.</strong> The app cannot place orders, cannot
+          access any exchange account, and cannot move funds.
+        </li>
+        <li>
+          <span class="term">Settings you choose</span> — your alert and haptic preferences, the
+          numbers you type into the position-size calculator, which signals you have marked as
+          taken, and the most recent signals shown are stored <strong>locally on your device
+          only</strong>. None of this is ever transmitted.
+        </li>
+        <li>
+          <span class="term">A notification token — only if you turn alerts on</span> — to send you
+          a push notification when a new signal is published, Android must give us a
+          <strong>Firebase Cloud Messaging registration token</strong> for your installation. If,
+          and only if, you enable "New-signal alerts" in Settings, that token is sent to our server
+          and stored so a notification can be delivered to your device.
+          <br /><br />
+          The token is a random identifier for an <em>app installation</em>. It is not your name,
+          email, phone number, advertising ID, or hardware ID; it changes if you reinstall the app
+          and it cannot be used to identify you personally. Alongside it we store only the platform
+          ("android") and the app version, so a broken build can be recognised. <strong>Nothing
+          about which pairs you view, which signals you copy or mark, or how you use the app is
+          ever sent with it.</strong>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Data We Do NOT Collect</h2>
+      <ul>
+        <li>❌ We do NOT collect your personal information (name, email, phone number)</li>
+        <li>❌ We do NOT have user accounts, logins, or profiles</li>
+        <li>❌ We do NOT upload your settings, your marked trades, or your usage to any server</li>
+        <li>❌ We do NOT link the notification token to any person, account, or profile</li>
+        <li>❌ We do NOT track your location</li>
+        <li>❌ We do NOT sell or share your data with anyone</li>
+        <li>❌ We do NOT serve ads of any kind</li>
+        <li>❌ We do NOT use an advertising ID</li>
+        <li>❌ We do NOT use third-party analytics, crash reporting, or trackers</li>
+        <li>❌ We do NOT ask for, store, or transmit exchange API keys or wallet credentials</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How Signals Are Produced</h2>
+      <p>
+        Signals are calculated from the public price history described above by applying published,
+        standard technical-analysis calculations — a moving-average trend filter and an Average True
+        Range volatility measure — to derive an entry range, a stop-loss level and take-profit
+        targets. There is no signal provider and no analyst.
+      </p>
+      <p>
+        The calculation runs on <strong>our server</strong>, every 15 minutes, so that a signal is
+        produced even when the app is closed. The results are written to a database that the app
+        reads. That database holds <strong>only market levels</strong> — a pair name, a direction,
+        an entry range, a stop and targets. It contains nothing about you, and it is the same for
+        every user; there is no per-user content of any kind.
+      </p>
+      <p>
+        If the app cannot reach the server, it falls back to performing the identical calculation
+        on your device.
+      </p>
+    </section>
+
+    <section>
+      <h2>Local Storage</h2>
+      <p>The app stores the following on your device, using your device's private on-device storage:</p>
+      <ul>
+        <li>The most recent signals shown, so the app reopens where you left it</li>
+        <li>Recently closed signals shown in the History tab</li>
+        <li>Your alert and haptic-feedback preferences</li>
+      </ul>
+      <p>
+        This data never leaves your device. You can clear it at any time by clearing the app's data
+        in your device settings, or by uninstalling the app.
+      </p>
+    </section>
+
+    <section>
+      <h2>Permissions</h2>
+      <ul>
+        <li><span class="term">Internet</span> — Required. Used to read Binance's public
+          market-data endpoints and to read published signals from our server. It is not used for
+          advertising, analytics, or transmitting anything about you.</li>
+        <li><span class="term">Notifications</span> — Optional. Used only to alert you when a new
+          signal is published. Turning this on is what causes a notification token to be sent to
+          our server (see above). Turning it off, or denying the permission, means no token is
+          ever sent.</li>
+        <li><span class="term">Vibrate</span> — Used only for haptic feedback when you copy a price.</li>
+      </ul>
+      <p>The app does not request or use an advertising ID.</p>
+    </section>
+
+    <section>
+      <h2>Data Retention &amp; Deletion</h2>
+      <p>Your settings, marked trades and cached signals are stored locally on your device only,
+        and stay there for as long as the app is installed.</p>
+      <p>
+        <span class="term">The only thing held on our server is the notification token</span>, and
+        only if you enabled alerts. It is kept for as long as it stays valid. When Google tells us
+        a token is dead — which is what happens when you uninstall the app or disable
+        notifications — <strong>our server deletes it automatically</strong> on the next send.
+      </p>
+      <p><span class="term">How to delete your data:</span></p>
+      <ul>
+        <li>Turn off "New-signal alerts" in the app's Settings, or revoke the notification
+          permission in Android settings. The stored token stops being valid and is deleted
+          automatically.</li>
+        <li>Go to your device's
+          <code>Settings → Apps → Crypto Signals 40 → Storage → Clear Data</code>
+          to erase all locally stored app data, or</li>
+        <li>Uninstall the app. This deletes all local data immediately and causes the stored
+          notification token to be deleted automatically.</li>
+        <li>You can also email us at
+          <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a> to request deletion of a
+          token, and we will remove it.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Not Financial Advice</h2>
+      <div class="notice">
+        <p style="margin:0">
+          Crypto Signals 40 is an <strong>information tool only</strong>. The levels it shows
+          are the output of standard technical calculations applied to public price data — they are
+          <strong>not financial, investment, or trading advice</strong>, and they are not a
+          recommendation to buy or sell anything. Rizwan Shoaib is not a licensed financial adviser or
+          broker. Cryptocurrency trading carries substantial risk, including the total loss of your
+          funds. Past price behaviour does not predict future results. Any decision you make is
+          your own, and you should consider seeking advice from a qualified professional.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>Our app does not knowingly collect data from children under 13. The app is intended for a
+        general adult audience.</p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this policy from time to time. The updated version will be indicated by the
+        "Last updated" date at the top.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>If you have questions about this privacy policy, please contact us at:</p>
+      <p>📧 <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a><br />
+        Developer: <strong>Rizwan Shoaib</strong></p>
+    </section>
+
+    <footer>
+      © 2026 Crypto Signals 40. All rights reserved.<br />
+      This privacy policy is hosted as part of the Crypto Signals 40 application.
+    </footer>
+  </div>
+</body>
+</html>
