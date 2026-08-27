@@ -158,7 +158,7 @@ h2 { font-size: 18px; }
 <span>Fasting Buddy</span>
 </div>
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: July 2026</p>
+<p class="updated">Last updated: August 2026</p>
 </section>
 
 <section class="card">
@@ -190,7 +190,11 @@ We never sell your personal data, and your health data stays on your device.
 
 <section class="card">
 <h2><span class="pill"></span>Calorie Scanner</h2>
-<p>When you use the Calorie Scanner, the meal photo you take or choose is sent to Google's Gemini Vision API to estimate calories and macros. The photo is used only to fulfil that request — we do not store it on our servers. The image and its results stay on your device. Google's privacy policy applies to these API interactions.</p>
+<p>When you use the Calorie Scanner, the meal photo you take or choose is sent to Google's Gemini API to estimate calories and macros.</p>
+<p>By default the photo is relayed through Fasting Buddy's own server (a Google Cloud Function) so that you do not need your own Google API key. The photo is held in memory only for as long as the estimate takes, is <strong>not written to disk, not logged, and never stored</strong>, and is not linked to your name, email or account — we do not have one for you. To apply fair-use limits we store an anonymous, randomly generated identifier for your installation together with a count of scans; it is created on your device, is not a device or advertising identifier, and is erased when you uninstall the app.</p>
+<p>Because these requests are made under a paid Google Cloud account, Google does not use your photos to train or improve its models, and its staff do not review them.</p>
+<p>If you enter your own Gemini API key in Settings, the photo goes directly from your device to Google and does not pass through our server at all.</p>
+<p>The estimate and the image stay on your device. Google's privacy policy applies to these API interactions.</p>
 </section>
 
 <section class="card">
