@@ -38,17 +38,24 @@
   <div class="wrap">
     <header>
       <h1>💊 Supplement Buddy — Privacy Policy</h1>
-      <p class="updated">Last updated: August 8, 2026</p>
+      <p class="updated">Last updated: September 7, 2026</p>
     </header>
 
     <section>
       <h2>Introduction</h2>
       <p>
-        Supplement Buddy ("we", "our", "the app") is a free, 100% offline supplement and vitamin
-        tracker developed and published by <strong>Rizwan Shoaib</strong>. We take your privacy seriously.
-        Supplement Buddy is built to be local-only: everything you log stays on your device. This
-        policy explains what data the app uses, why, and how it's handled.
+        Supplement Buddy ("we", "our", "the app") is a free supplement and vitamin tracker
+        developed and published by <strong>Rizwan Shoaib</strong>. Two things are true at once, and
+        this policy keeps them apart:
       </p>
+      <ul>
+        <li><strong>Your supplement data is local-only.</strong> Everything you log — supplements,
+          dosages, schedules, intake history, reminders and notes — stays on your device and is
+          never uploaded to us or to anyone else.</li>
+        <li><strong>The app is supported by ads.</strong> From version 1.1.0 Supplement Buddy shows
+          ads supplied by Google AdMob, and serving them means some technical information about
+          your device is collected by Google. That is described in full below.</li>
+      </ul>
     </section>
 
     <section>
@@ -63,16 +70,61 @@
     </section>
 
     <section>
+      <h2>Advertising</h2>
+      <p>
+        From version 1.1.0, Supplement Buddy is free and supported by ads served by
+        <span class="term">Google AdMob</span>. There is one small banner at the bottom of the
+        Today screen, and one occasional full-screen ad that appears <em>only</em> when you open
+        the Stats tab — never while you are taking or logging a dose, and never on app launch. It
+        is capped at twice a day, and the first time you open Stats in any session is always free
+        of it.
+      </p>
+      <p>To request an ad, the Google Mobile Ads SDK inside the app sends the following to Google
+        and its advertising partners:</p>
+      <ul>
+        <li>Your device's <span class="term">advertising ID</span> (a resettable identifier Android
+          provides for advertising) and app-set ID.</li>
+        <li><span class="term">Coarse device and app information</span> — device model, operating
+          system version, language, screen size, and the fact that the request came from
+          Supplement Buddy.</li>
+        <li>Your <span class="term">IP address</span>, from which Google can estimate an
+          approximate (city-level) location.</li>
+        <li><span class="term">Interactions with the ad</span> and with the screen showing it, plus
+          basic diagnostic and performance data, used to count impressions, detect invalid traffic
+          and fix faults.</li>
+      </ul>
+      <p>
+        This data is collected by Google and shared with Google as an advertising partner, for
+        advertising, analytics and fraud prevention. Google's handling of it is covered by
+        <a href="https://policies.google.com/technologies/partner-sites">Google Privacy &amp; Terms</a>
+        and the <a href="https://support.google.com/admob/answer/6128543">AdMob partner policies</a>.
+      </p>
+      <p>
+        <span class="term">Consent in Europe.</span> If you are in the European Economic Area, the
+        United Kingdom or Switzerland, the app shows a Google-certified consent form the first time
+        it runs and records your choice. If you do not consent to personalised advertising, the app
+        requests non-personalised ads instead. You can reset your advertising ID or opt out of ad
+        personalisation at any time in Android Settings → Privacy → Ads.
+      </p>
+      <p>
+        <strong>What is never part of an ad request:</strong> your supplement list, dosages,
+        schedules, intake history, notes or reminder times. None of it is sent anywhere.
+      </p>
+    </section>
+
+    <section>
       <h2>Data We Do NOT Collect</h2>
       <ul>
         <li>❌ We do NOT collect your personal information (name, email, phone number)</li>
         <li>❌ We do NOT upload your supplements, logs, or any other data to any server</li>
-        <li>❌ We do NOT track your location</li>
-        <li>❌ We do NOT sell or share your data</li>
-        <li>❌ We do NOT serve ads of any kind</li>
-        <li>❌ We do NOT use third-party analytics or trackers</li>
+        <li>❌ We do NOT track your precise location</li>
+        <li>❌ We do NOT sell your data</li>
         <li>❌ We do NOT require account creation or login</li>
+        <li>❌ We do NOT operate any server of our own</li>
       </ul>
+      <p class="note">Earlier versions of Supplement Buddy carried no ads at all and stripped the
+        advertising-ID permissions at build time. Version 1.1.0 changed that, and this policy was
+        updated before that version was published.</p>
     </section>
 
     <section>
@@ -100,14 +152,20 @@
         <li><span class="term">Vibrate</span> — Used only for haptic feedback in the app and for
           reminder alerts on your device.</li>
       </ul>
-      <p>The app does not request or use an advertising ID. The Android advertising-ID permissions are
-        explicitly removed from the app at build time.</p>
+      <ul>
+        <li><span class="term">Internet</span> — Used solely to request the ads described above.
+          None of your supplement data travels over it.</li>
+        <li><span class="term">Advertising ID</span> — Used by Google AdMob to serve and measure
+          ads. Earlier versions removed this permission at build time; version 1.1.0 declares it,
+          because the app now serves ads.</li>
+      </ul>
     </section>
 
     <section>
       <h2>Data Retention &amp; Deletion</h2>
-      <p>All user data is stored locally on your device only. We do not store any of your data on
-        external servers, so there is no server-side data to retain or delete.</p>
+      <p>All of the data you enter is stored locally on your device only. We operate no servers, so
+        there is no server-side copy of your supplement data to retain or delete. Advertising data
+        held by Google is governed by Google's own retention policies, linked above.</p>
       <p><span class="term">How long we retain data:</span> local data is kept on your device for as
         long as the app is installed. There is no expiration — data persists until you choose to
         delete it.</p>
@@ -122,8 +180,9 @@
 
     <section>
       <h2>Children's Privacy</h2>
-      <p>Our app does not knowingly collect data from children under 13. The app is intended for a
-        general adult audience.</p>
+      <p>Supplement Buddy is intended for a general adult audience and is not directed at children
+        under 13. We do not knowingly collect data from children. Ad content is restricted to a
+        general-audience rating.</p>
     </section>
 
     <section>
