@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <title>Privacy Policy — Speech Coach</title>
+  <style>
+    :root { --bg: #0E1116; --fg: #EEF1F6; --muted: #9BA6B6; --line: #2A313C; --accent: #7C9CFF; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--fg);
+      line-height: 1.65;
+      background: var(--bg);
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 48px 22px 72px; }
+    header h1 { font-size: 1.9rem; margin: 0 0 6px; letter-spacing: -0.02em; }
+    header h1 .accent { color: var(--accent); }
+    .tag { color: var(--muted); font-size: 0.98rem; margin: 0 0 4px; }
+    .updated { color: var(--muted); font-size: 0.9rem; margin: 0 0 30px; }
+    h2 { font-size: 1.15rem; margin: 36px 0 10px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+    p, li { font-size: 1rem; }
+    ul { padding-left: 22px; }
+    li { margin: 7px 0; }
+    a { color: var(--accent); }
+    code { background: #171B22; padding: 1px 6px; border-radius: 6px; font-size: 0.92em; }
+    .term { font-weight: 600; }
+    .lead { font-size: 1.05rem; }
+    footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Speech Coach — <span class="accent">Privacy Policy</span></h1>
+      <p class="tag">Published by Rizwan Shoaib (OVC Tech)</p>
+      <p class="updated">Last updated: September 17, 2026</p>
+    </header>
+
+    <section>
+      <h2>The short version</h2>
+      <p class="lead">
+        Speech Coach does not collect anything. Your scripts, your recorded takes, their
+        transcripts and your pace figures stay on your phone. There is no account, no server, no
+        analytics and no advertising. The one place a recording goes outside the app is your own
+        phone's gallery, and only because you recorded it there to watch it back.
+      </p>
+    </section>
+
+    <section>
+      <h2>What the app records, and where it goes</h2>
+      <ul>
+        <li>
+          <span class="term">Scripts.</span> The text you write or paste is stored in the app's own
+          private database on the device. It is never uploaded.
+        </li>
+        <li>
+          <span class="term">Video and audio.</span> When you press record, the app films you with
+          the front camera and microphone. The file is saved to Speech Coach's private storage
+          area, and a copy is added to your phone's gallery so you can watch or share it with any
+          app you choose. The app only ever <em>adds</em> to the gallery; it does not read, list or
+          modify anything already in it.
+        </li>
+        <li>
+          <span class="term">Speech transcript.</span> While you record, your phone's built-in
+          offline speech recognition converts what you say to text so the teleprompter can follow
+          your voice and the app can work out your words per minute. This runs entirely on the
+          device. Speech Coach explicitly requests on-device recognition and never falls back to a
+          network recogniser — if no offline language pack is installed, the feature is switched
+          off rather than sent elsewhere.
+        </li>
+        <li>
+          <span class="term">Your takes.</span> Date, length, word count, pace and the transcript
+          for each take are saved in the app's local database alongside the script they belong to.
+        </li>
+      </ul>
+      <p>
+        All of this lives only on your phone. Uninstalling Speech Coach deletes every script, take
+        and number held by the app. Copies you exported to the gallery are yours and remain there.
+      </p>
+    </section>
+
+    <section>
+      <h2>Backups</h2>
+      <p>
+        Android can normally copy an app's data to a user's Google Drive automatically. Speech
+        Coach turns this off (<code>allowBackup=false</code>), so your scripts, takes and
+        transcripts are not included in a device backup.
+      </p>
+    </section>
+
+    <section>
+      <h2>Permissions, and why each one exists</h2>
+      <ul>
+        <li><span class="term">Camera</span> — to film your take. Used only while the studio screen
+          is open.</li>
+        <li><span class="term">Microphone</span> — to record your voice and, via your phone's
+          offline speech recognition, to follow your script and measure your pace.</li>
+        <li><span class="term">Photos and videos</span> — write-only access, to add finished takes to
+          your gallery. This needs no runtime prompt on Android 13 and later. On Android 12 and
+          earlier the app does not hold the legacy storage permission, so the gallery export is
+          skipped there and the take stays inside the app.</li>
+        <li><span class="term">Keep awake</span> — so the screen does not lock in the middle of a
+          take.</li>
+        <li><span class="term">Internet</span> — declared by the app framework, but Speech Coach has
+          no server, no analytics and no ads, and makes no network requests of its own.</li>
+      </ul>
+      <p>
+        The app does <span class="term">not</span> request location, contacts, or read access to
+        your photo library.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact &amp; feedback</h2>
+      <p>
+        The in-app contact screen hands a prefilled message to WhatsApp or your email app, which
+        you then send yourself. The message carries the app version, your device model and Android
+        version, and the recognition language you chose — nothing from your scripts, takes or
+        transcripts.
+      </p>
+    </section>
+
+    <section>
+      <h2>Children</h2>
+      <p>
+        Speech Coach is not directed at children under 13. It collects no personal information
+        from anyone, of any age.
+      </p>
+    </section>
+
+    <section>
+      <h2>Third parties</h2>
+      <p>
+        There are none. No advertising, no analytics, no crash reporting, no third-party accounts.
+        Speech recognition is performed by the software already built into your phone, not by a
+        service Speech Coach sends your audio to.
+      </p>
+    </section>
+
+    <section>
+      <h2>Changes</h2>
+      <p>
+        If this policy ever changes — for instance if a future version needed network access — the
+        updated policy will be posted here with a new date, and the app's Play Data safety section
+        will be updated to match before that version ships.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy: <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      Speech Coach · <code>tech.ovc.speechcoach</code> · Rizwan Shoaib
+    </footer>
+  </div>
+</body>
+</html>
