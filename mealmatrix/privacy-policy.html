@@ -42,16 +42,18 @@
     <header>
       <h1>MealMatrix — <span class="accent">Privacy Policy</span></h1>
       <p class="tag">Published by Rizwan Shoaib</p>
-      <p class="updated">Last updated: August 23, 2026</p>
+      <p class="updated">Last updated: September 23, 2026</p>
     </header>
 
     <section>
       <h2>The short version</h2>
       <p class="lead">
-        MealMatrix does not collect anything. Your recipes, your weekly plan, your pantry and your
-        shopping list stay on your phone. There is no account, no server and no analytics — and the
-        version on Google Play is built <span class="term">without the Android internet
-        permission</span>, so the app cannot send anything anywhere even if we wanted it to.
+        Your recipes, your weekly plan, your pantry and your shopping list stay on your phone.
+        There is no account and no server of ours. From version 1.1.0 MealMatrix is free and
+        supported by a single banner ad served by <span class="term">Google AdMob</span>; to
+        request it the app needs internet access and uses your device's advertising ID. That ad
+        request is the only thing that ever leaves your phone, and this policy explains exactly
+        what it involves. Earlier versions carried no ads and made no network requests at all.
       </p>
     </section>
 
@@ -73,9 +75,47 @@
       </ul>
       <p>
         All of it is written to a database inside MealMatrix's own private storage area on the
-        device. Uninstalling MealMatrix deletes every bit of it, and there is no copy anywhere
-        else to recover from.
+        device. None of it is sent to Google, to an advertiser, or to anyone else — the ad request
+        described below carries no recipe, plan or list. Uninstalling MealMatrix deletes every bit
+        of it, and there is no copy anywhere else to recover from.
       </p>
+    </section>
+
+    <section>
+      <h2>Advertising</h2>
+      <p>
+        From version 1.1.0, MealMatrix is free and supported by ads. It displays a single banner
+        ad served by <span class="term">Google AdMob</span> at the bottom of the Planner tab. There
+        is no full-screen ad, no ad on launch, and no ad on the Groceries tab.
+      </p>
+      <p>
+        To request an ad, the Google Mobile Ads SDK inside the app sends the following to Google
+        and its advertising partners:
+      </p>
+      <ul>
+        <li>Your device's <span class="term">advertising ID</span> (a resettable identifier
+          Android provides for advertising) and app-set ID.</li>
+        <li>Your <span class="term">IP address</span>, from which Google derives an approximate
+          location. MealMatrix never asks for location permission.</li>
+        <li>Coarse <span class="term">device and app information</span> — device model, OS
+          version, app version, and interaction with the ad itself.</li>
+        <li><span class="term">Diagnostics</span> about the ad request, such as whether it loaded.</li>
+      </ul>
+      <p>
+        This data is collected by Google and shared with Google as an advertising partner. It is
+        used for advertising, analytics and fraud prevention. Google's handling of it is described
+        in <a href="https://policies.google.com/technologies/partner-sites">How Google uses
+        information from sites or apps that use our services</a> and the
+        <a href="https://support.google.com/admob/answer/6128543">AdMob partner policies</a>.
+      </p>
+      <p>
+        <span class="term">Consent in Europe.</span> If you are in the European Economic Area, the
+        United Kingdom or Switzerland, MealMatrix shows a Google-certified consent form the first
+        time it runs and records your choice. If you do not consent to personalised advertising,
+        the app requests non-personalised ads instead. You can reset your advertising ID or opt out
+        of ad personalisation at any time in Android Settings → Privacy → Ads.
+      </p>
+      <p>Ad content is limited to Google's "G" (general audience) rating.</p>
     </section>
 
     <section>
@@ -112,9 +152,14 @@
 
     <section>
       <h2>Permissions, and why each one exists</h2>
+      <ul>
+        <li><span class="term">Internet</span> — used solely to request ads. Your recipes, plan,
+          pantry and list are never sent over it.</li>
+        <li><span class="term">Advertising ID</span> — used by Google AdMob to serve ads, as
+          described above.</li>
+      </ul>
       <p>
-        MealMatrix requests <span class="term">no runtime permissions at all</span>. The release
-        build ships with the internet permission stripped out of its manifest. It does not ask for
+        MealMatrix requests <span class="term">no runtime permissions</span>. It does not ask for
         camera, microphone, location, contacts, storage, notifications or your photo library.
       </p>
     </section>
@@ -122,8 +167,8 @@
     <section id="delete-data">
       <h2>Deleting your data</h2>
       <p>
-        Because nothing leaves your device, there is no server-side account to close and nothing
-        for us to delete on your behalf. You can erase your data at any time, yourself:
+        Because your data lives on your device only, there is no server-side account to close and
+        nothing for us to delete on your behalf. You can erase your data at any time, yourself:
       </p>
       <ul>
         <li><span class="term">Inside the app</span> — Settings → Reset to factory presets wipes
@@ -133,32 +178,32 @@
       </ul>
       <p>
         Either action is immediate and permanent. Export a backup first if you might want any of
-        it back.
+        it back. Advertising data is held by Google, not by us — use the Android ad settings above
+        to reset or opt out.
       </p>
     </section>
 
     <section>
       <h2>Children</h2>
       <p>
-        MealMatrix is not directed at children under 13. It collects no personal information from
-        anyone, of any age.
+        MealMatrix is intended for users aged 13 and over and is not directed at children under 13.
+        We do not knowingly collect personal information from children under 13.
       </p>
     </section>
 
     <section>
       <h2>Third parties</h2>
       <p>
-        There are none. No advertising, no analytics, no crash reporting, no in-app purchases, no
-        third-party accounts, no software development kits that phone home.
+        Google AdMob, for the banner ad described above, is the only third party. There is no
+        analytics, no crash reporting, no in-app purchase and no third-party account.
       </p>
     </section>
 
     <section>
       <h2>Changes</h2>
       <p>
-        If this policy ever changes — for instance if a future version needed network access — the
-        updated policy will be posted here with a new date, and the app's Play Data safety section
-        will be updated to match before that version ships.
+        If this policy changes, the updated policy will be posted here with a new date, and the
+        app's Play Data safety section will be updated to match before that version ships.
       </p>
     </section>
 

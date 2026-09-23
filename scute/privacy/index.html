@@ -38,7 +38,7 @@
   <div class="wrap">
     <header>
       <h1>🦎 Scute — Privacy Policy</h1>
-      <p class="updated">Last updated: June 17, 2026</p>
+      <p class="updated">Last updated: September 23, 2026</p>
     </header>
 
     <section>
@@ -46,8 +46,12 @@
       <p>
         Scute ("we", "our", "the app") is a private, on-device reptile husbandry tracker
         developed and published by <strong>Rizwan Shoaib</strong>. We take your privacy seriously.
-        Scute is built to be local-only: the records you log stay on your device. This policy
-        explains what data the app uses, why, and how it's handled.
+        Scute is built to be local-only: the records you log stay on your device. From version
+        1.2.0 the app is free and supported by a single banner ad served by
+        <span class="term">Google AdMob</span>; to request it the app needs internet access and
+        uses your device's advertising ID. That ad request is the only thing that ever leaves your
+        phone. Earlier versions carried no ads. This policy explains what data the app uses, why,
+        and how it's handled.
       </p>
     </section>
 
@@ -57,7 +61,7 @@
         <li>
           <span class="term">Care records you enter</span> — the animals, feedings, weights, sheds,
           husbandry readings (temperature/humidity), and notes you log are stored
-          <strong>locally on your device only</strong> and are never transmitted to our servers.
+          <strong>locally on your device only</strong> and are never transmitted to any server.
         </li>
         <li>
           <span class="term">Camera / Photos (optional)</span> — if you add a photo of an animal, Scute
@@ -72,18 +76,56 @@
       <ul>
         <li>❌ We do NOT collect your personal information (name, email, phone number)</li>
         <li>❌ We do NOT upload your animals, photos, logs, or other data to any server</li>
-        <li>❌ We do NOT track your location</li>
-        <li>❌ We do NOT sell or share your data</li>
-        <li>❌ We do NOT serve ads of any kind</li>
-        <li>❌ We do NOT use third-party analytics or trackers</li>
+        <li>❌ We do NOT collect your location from your device's location services</li>
+        <li>❌ We do NOT sell your personal data</li>
+        <li>❌ We do NOT use third-party analytics, trackers or crash-reporting SDKs</li>
         <li>❌ We do NOT require account creation or login</li>
       </ul>
     </section>
 
     <section>
+      <h2>Advertising</h2>
+      <p>
+        From version 1.2.0, Scute is free and supported by ads. It displays a single banner ad
+        served by <span class="term">Google AdMob</span> at the bottom of the home screen (the
+        animal list). There is no full-screen ad, no ad on launch, and no ad on an animal's own
+        page where you log care.
+      </p>
+      <p>
+        To request an ad, the Google Mobile Ads SDK inside the app sends the following to Google
+        and its advertising partners:
+      </p>
+      <ul>
+        <li>Your device's <span class="term">advertising ID</span> (a resettable identifier
+          Android provides for advertising) and app-set ID.</li>
+        <li>Your <span class="term">IP address</span>, from which Google derives an approximate
+          location. Scute never asks for location permission.</li>
+        <li>Coarse <span class="term">device and app information</span> — device model, OS
+          version, app version, and interaction with the ad itself.</li>
+        <li><span class="term">Diagnostics</span> about the ad request, such as whether it loaded.</li>
+      </ul>
+      <p>
+        This data is collected by Google and shared with Google as an advertising partner. It is
+        used for advertising, analytics and fraud prevention. Google's handling of it is described
+        in <a href="https://policies.google.com/technologies/partner-sites">How Google uses
+        information from sites or apps that use our services</a> and the
+        <a href="https://support.google.com/admob/answer/6128543">AdMob partner policies</a>.
+        Your animals, logs and photos are never part of an ad request.
+      </p>
+      <p>
+        <span class="term">Consent in Europe.</span> If you are in the European Economic Area, the
+        United Kingdom or Switzerland, Scute shows a Google-certified consent form the first time it
+        runs and records your choice. If you do not consent to personalised advertising, the app
+        requests non-personalised ads instead. You can reset your advertising ID or opt out of ad
+        personalisation at any time in Android Settings → Privacy → Ads.
+      </p>
+      <p>Ad content is limited to Google's "G" (general audience) rating.</p>
+    </section>
+
+    <section>
       <h2>Local Storage</h2>
       <p>The app stores the following data locally on your device, using an on-device database
-        (SQLite) and your device's private file storage:</p>
+      (SQLite) and your device's private file storage:</p>
       <ul>
         <li>Animal profiles (name, species, morph, sex, feeding interval, notes)</li>
         <li>Feeding, weight, shed, and husbandry log entries</li>
@@ -91,7 +133,7 @@
         <li>App settings (feeding-reminder preferences)</li>
       </ul>
       <p>This data never leaves your device. You can clear it at any time from within the app or by
-        clearing the app's data in your device settings.</p>
+      clearing the app's data in your device settings.</p>
     </section>
 
     <section>
@@ -99,17 +141,22 @@
       <ul>
         <li><span class="term">Camera / Photos</span> — Optional. Used only when you add a photo of an
           animal.</li>
-        <li><span class="term">Notifications</span> — Optional. Used for per-animal feeding reminders.</li>
+        <li><span class="term">Notifications</span> — Optional. Used for per-animal feeding reminders,
+          scheduled entirely on your device.</li>
+        <li><span class="term">Internet</span> — Used solely to request ads. Your animals, logs and
+          photos are never sent over it.</li>
+        <li><span class="term">Advertising ID</span> — Used by Google AdMob to serve ads, as
+          described above.</li>
       </ul>
     </section>
 
     <section>
       <h2>Data Retention &amp; Deletion</h2>
       <p>All user data is stored locally on your device only. We do not store any of your data on
-        external servers, so there is no server-side data to retain or delete.</p>
+      external servers, so there is no server-side data to retain or delete.</p>
       <p><span class="term">How long we retain data:</span> local data is kept on your device for as
-        long as the app is installed. There is no expiration — data persists until you choose to
-        delete it.</p>
+      long as the app is installed. There is no expiration — data persists until you choose to
+      delete it.</p>
       <p><span class="term">How to delete your data:</span></p>
       <ul>
         <li>Delete individual animals or log entries within the app, or</li>
@@ -118,29 +165,32 @@
         <li>Uninstalling the app permanently deletes all associated data, including photos, from your
           device.</li>
       </ul>
+      <p>Advertising data is held by Google, not by us — use the Android ad settings above to reset
+      or opt out.</p>
       <p><span class="term">A note on backups:</span> Scute lets you export an optional backup file
-        that you control. Where that file is stored, and who you share it with, is up to you — we never
-        receive it. If you have any concerns, contact us at
-        <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a>.</p>
+      that you control. Where that file is stored, and who you share it with, is up to you — we never
+      receive it. If you have any concerns, contact us at
+      <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a>.</p>
     </section>
 
     <section>
       <h2>Children's Privacy</h2>
-      <p>Our app does not knowingly collect data from children under 13. The app is intended for a
-        general adult audience.</p>
+      <p>Scute is intended for users aged 13 and over and is not directed at children under 13. We
+      do not knowingly collect personal information from children under 13.</p>
     </section>
 
     <section>
       <h2>Changes to This Policy</h2>
       <p>We may update this policy from time to time. The updated version will be indicated by the
-        "Last updated" date at the top.</p>
+      "Last updated" date at the top, and the app's Play Data safety section is updated to match
+      before a version that changes what the app does ships.</p>
     </section>
 
     <section>
       <h2>Contact</h2>
       <p>If you have questions about this privacy policy, please contact us at:</p>
       <p>📧 <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a><br />
-        Developer: <strong>Rizwan Shoaib</strong></p>
+      Developer: <strong>Rizwan Shoaib</strong></p>
     </section>
 
     <footer>
