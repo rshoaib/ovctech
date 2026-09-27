@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Privacy Policy for SpeakUp — Confidence Coach. Audio recordings are processed by Google Gemini and not stored on our servers." />
+  <meta name="description" content="Privacy Policy for SpeakUp — Confidence Coach. Audio is analysed by Google Gemini and the transcript reviewed by DeepInfra (Qwen), via our own relay. Nothing is stored on our servers." />
   <meta name="theme-color" content="#06B6D4" />
   <title>Privacy Policy — SpeakUp: Confidence Coach</title>
   <style>
@@ -165,7 +165,7 @@
         <span>SpeakUp — Confidence Coach</span>
       </div>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: September 7, 2026</p>
+      <p class="updated">Last updated: September 27, 2026</p>
     </section>
 
     <section class="card">
@@ -175,15 +175,15 @@
 
     <section class="card">
       <h2><span class="pill"></span>Audio Recording &amp; AI Analysis</h2>
-      <p>When you start a practice session, SpeakUp records your speech using your device's microphone. To give you coaching feedback (transcript, speaking pace, filler-word count, and an overall score), the recorded clip is sent to <strong>Google Gemini</strong> for analysis.</p>
+      <p>When you start a practice session, SpeakUp records your speech using your device's microphone. To give you coaching feedback, the recording and its analysis are processed by two AI services, reached through our own relay server (a Google Cloud Function we operate). The relay exists so the AI providers' credentials stay on our server and not inside the app; it forwards each request and does <strong>not</strong> store or log your audio or transcript.</p>
       <ul>
         <li>Recordings are <strong>only</strong> captured during an active practice session that you start.</li>
-        <li>We do not store your audio on our servers. After Gemini returns the analysis, the clip is no longer needed by us.</li>
-        <li>Processing by Google is governed by Google's privacy policy and Generative AI terms — see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</li>
-        <li>Only the analysis results (score, transcript text, pace, etc.) are saved to your device for your session history.</li>
+        <li><strong>Speech analysis (audio):</strong> the recorded clip is sent to <strong>Google Gemini</strong>, which returns the transcript, speaking pace, filler-word count and an overall score. We do not store your audio; once the analysis is returned the clip is no longer needed by us. Processing by Google is governed by Google's privacy policy and paid Generative AI terms, under which your content is not used to train Google's models — see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</li>
+        <li><strong>Post-practice feedback (text):</strong> the transcript and the measurements above (length, pace, filler words, score) are sent to <strong>DeepInfra</strong>, which runs an open-weight Qwen language model to produce the feedback card shown after each take. DeepInfra does not retain prompts or outputs for this model family (zero data retention) — see <a href="https://docs.deepinfra.com/account/data-privacy" target="_blank" rel="noopener">DeepInfra data privacy</a>. If this step fails, the feedback is built on your device from the measurements alone.</li>
+        <li>Only the analysis results (score, transcript text, pace, feedback) are saved to your device for your session history.</li>
       </ul>
       <div class="callout warn">
-        Please avoid speaking sensitive personal information (passwords, financial details, health information) during practice sessions, since the audio will be transmitted to Google's AI service for analysis.
+        Please avoid speaking sensitive personal information (passwords, financial details, health information) during practice sessions, since the audio and its transcript will be transmitted to these AI services for analysis.
       </div>
     </section>
 
@@ -192,7 +192,7 @@
       <ul>
         <li>Your practice history, scores, streaks, and preferences are stored locally on your device.</li>
         <li>No user account or registration is required.</li>
-        <li>We never sell your personal data. The third parties involved are all Google services: Gemini (for the speech analysis described above), Google AdMob (for advertising), and Google Analytics for Firebase and Firebase Crashlytics (for usage analytics and crash reporting), each described below.</li>
+        <li>We never sell your personal data. The third parties involved are: Google Gemini (speech analysis) and DeepInfra (post-practice feedback), both described above; Google AdMob (advertising); and Google Analytics for Firebase and Firebase Crashlytics (usage analytics and crash reporting), each described below.</li>
       </ul>
     </section>
 
@@ -238,7 +238,7 @@
 
     <section class="card">
       <h2><span class="pill"></span>Data Deletion</h2>
-      <p>You can reset your entire practice history at any time from the app's settings. Uninstalling the app also removes all locally stored data. If you wish to request deletion of any data processed by Google's Gemini service, contact us at the email below and we will help facilitate the request.</p>
+      <p>You can reset your entire practice history at any time from the app's settings. Uninstalling the app also removes all locally stored data. If you wish to request deletion of any data processed by Google's Gemini service or by DeepInfra, contact us at the email below and we will help facilitate the request.</p>
     </section>
 
     <section class="card">
