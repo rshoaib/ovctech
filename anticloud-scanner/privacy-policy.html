@@ -41,15 +41,19 @@
     <header>
       <h1>Anti-Cloud Scanner — Privacy Policy</h1>
       <p class="tag">Published by Rizwan Shoaib</p>
-      <p class="updated">Last updated: July 16, 2026</p>
+      <p class="updated">Last updated: September 30, 2026</p>
     </header>
 
     <section>
       <h2>The short version</h2>
       <p class="lead">
-        Anti-Cloud Scanner does not collect any data. There are no accounts, no servers, no
-        analytics, no advertising, and <strong>no network connection</strong>. Everything you scan
-        stays on your device. That is the entire point of the app.
+        Everything you scan stays on your device. There are no accounts, no servers of ours, no
+        analytics and no cloud. From version 1.1.0 the free tier of Anti-Cloud Scanner is supported
+        by <strong>a single banner ad served by Google AdMob</strong>; to request it the app needs
+        internet access and uses your device's advertising ID. That ad request is the only thing
+        that ever leaves your phone, it never contains a scan, and this policy explains exactly what
+        it involves. Buying the one-time Lifetime Pro unlock removes the ad entirely. Earlier
+        versions (1.0.x) carried no ads and had no internet permission at all.
       </p>
     </section>
 
@@ -58,9 +62,9 @@
       <p>
         You photograph a document with your camera. The text is read on your device using your
         phone's built-in, offline text-recognition engine (Google ML Kit on Android, Apple Vision
-        on iOS). The image and the recognized text never leave your device. The app does not
-        request Internet access — it cannot upload anything, because it has no way to reach a
-        network.
+        on iOS). The image and the recognized text never leave your device: the app has no backend
+        to send them to. The app's only network activity is requesting ads from Google AdMob (see
+        <em>Advertising</em> below), and that request carries no image, no text and no document.
       </p>
     </section>
 
@@ -68,14 +72,51 @@
       <h2>Data We Do NOT Collect</h2>
       <ul>
         <li>❌ We do NOT collect your personal information (name, email, phone number)</li>
-        <li>❌ We do NOT upload your scans, photos, or recognized text anywhere</li>
-        <li>❌ We do NOT connect to the Internet — the app has no network permission</li>
-        <li>❌ We do NOT track your location</li>
-        <li>❌ We do NOT use any analytics, trackers, or advertising SDKs</li>
-        <li>❌ We do NOT serve ads and do NOT use an advertising ID</li>
-        <li>❌ We do NOT sell or share your data (there is no data to sell or share)</li>
+        <li>❌ We do NOT upload your scans, photos, recognized text or PDFs anywhere</li>
+        <li>❌ We do NOT collect your location from your device's location services</li>
+        <li>❌ We do NOT use any analytics, trackers or crash-reporting SDKs</li>
+        <li>❌ We do NOT sell your personal data</li>
         <li>❌ We do NOT require an account or login</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Advertising</h2>
+      <p>
+        From version 1.1.0, the free tier of Anti-Cloud Scanner is supported by ads. It displays a
+        single banner ad served by <strong>Google AdMob</strong> at the bottom of the Review screen,
+        below the Save / Extract / Export buttons. There is no full-screen ad, no ad on launch and
+        no ad over the camera viewfinder. Users who have bought Lifetime Pro see no ads at all, and
+        the ad SDK is not initialised for them.
+      </p>
+      <p>
+        To request an ad, the Google Mobile Ads SDK inside the app sends the following to Google
+        and its advertising partners:
+      </p>
+      <ul>
+        <li><span class="term">Your device's advertising ID</span> (a resettable identifier Android
+          provides for advertising) and app-set ID.</li>
+        <li><span class="term">Your IP address</span>, from which Google derives an approximate
+          location. Anti-Cloud Scanner never asks for location permission.</li>
+        <li><span class="term">Coarse device and app information</span> — device model, OS version,
+          app version, and interaction with the ad itself.</li>
+        <li><span class="term">Diagnostics</span> about the ad request, such as whether it loaded.</li>
+      </ul>
+      <p>
+        This data is collected by Google and shared with Google as an advertising partner. It is
+        used for advertising, analytics and fraud prevention. Google's handling of it is described
+        in <a href="https://policies.google.com/technologies/partner-sites">How Google uses
+        information from sites or apps that use our services</a> and the
+        <a href="https://support.google.com/admob/answer/6128543">AdMob partner policies</a>.
+      </p>
+      <p>
+        <span class="term">Consent in Europe.</span> If you are in the European Economic Area, the
+        United Kingdom or Switzerland, the app shows a Google-certified consent form the first time
+        it runs and records your choice. If you do not consent to personalised advertising, the app
+        requests non-personalised ads instead. You can reset your advertising ID or opt out of ad
+        personalisation at any time in Android Settings → Privacy → Ads.
+      </p>
+      <p>Ad content is limited to Google's "G" (general audience) rating.</p>
     </section>
 
     <section>
@@ -84,7 +125,8 @@
         Scans and any exported PDFs are held in the app's own private, on-device storage. If you
         choose <span class="term">Save to Gallery</span>, the app writes that single image to your
         device's photo gallery — an add-only action on your device. The app never reads or browses
-        the rest of your gallery. Nothing is transmitted off the device at any point.
+        the rest of your gallery. No scan, text or PDF is transmitted off the device at any point —
+        the ad request described above carries none of them.
       </p>
     </section>
 
@@ -97,6 +139,10 @@
           Save to Gallery, to add a scan to your device's photos. The app never reads your library.</li>
         <li><span class="term">Billing</span> — Optional. Used only if you choose to buy the one-time
           Pro upgrade (see below). Handled by the Google Play Store app, not by us.</li>
+        <li><span class="term">Internet</span> — Used solely to request ads. Your scans, text and
+          PDFs are never sent over it.</li>
+        <li><span class="term">Advertising ID</span> — Used by Google AdMob to serve ads, as
+          described above. Not used at all once Lifetime Pro is unlocked.</li>
       </ul>
     </section>
 
@@ -104,10 +150,10 @@
       <h2>One-time Pro purchase</h2>
       <p>
         The app offers a single, optional, one-time in-app purchase (Anti-Cloud Scanner Pro) that
-        unlocks unlimited text extraction and PDF export. The purchase is processed entirely by the
-        <strong>Google Play Store</strong>. We never see or receive your name, card number, or any
-        payment details — Google handles the transaction. Google's handling of that purchase is
-        governed by
+        unlocks unlimited text extraction and PDF export and removes the banner ad. The purchase is
+        processed entirely by the <strong>Google Play Store</strong>. We never see or receive your
+        name, card number, or any payment details — Google handles the transaction. Google's
+        handling of that purchase is governed by
         <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. The app itself
         stores only a local flag recording that Pro is unlocked; that flag stays on your device.
       </p>
@@ -116,22 +162,25 @@
     <section>
       <h2>Data Retention &amp; Deletion</h2>
       <p>
-        All data lives on your device only. Because we operate no servers, there is nothing for us
-        to retain, delete, or hand over.
+        All of your documents live on your device only. Because we operate no servers, there is
+        nothing for us to retain, delete, or hand over. The advertising data described above is
+        held by Google under its own retention rules, not by us.
       </p>
       <ul>
         <li>Delete individual scans from within the app, or</li>
         <li>Go to <code>Settings → Apps → Anti-Cloud Scanner → Storage → Clear Data</code> to erase
           all locally stored app data, or</li>
         <li>Uninstall the app to permanently remove everything associated with it from your device.</li>
+        <li>Reset your advertising ID or opt out of ad personalisation in
+          <code>Android Settings → Privacy → Ads</code>.</li>
       </ul>
     </section>
 
     <section>
       <h2>Children's Privacy</h2>
       <p>
-        The app does not knowingly collect data from anyone, including children under 13, and is
-        suitable for general audiences.
+        The app is not directed at children and does not knowingly collect data from children under
+        13. Ad content is restricted to the general-audience "G" rating.
       </p>
     </section>
 
@@ -139,7 +188,8 @@
       <h2>Changes to This Policy</h2>
       <p>
         We may update this policy from time to time. The current version is always indicated by the
-        "Last updated" date above.
+        "Last updated" date above. The September 30, 2026 update introduced the Advertising section
+        when the free tier became ad-supported.
       </p>
     </section>
 
@@ -152,7 +202,7 @@
 
     <footer>
       © 2026 Rizwan Shoaib. All rights reserved.<br />
-      Anti-Cloud Scanner — private, offline document scanning.
+      Anti-Cloud Scanner — private, on-device document scanning.
     </footer>
   </div>
 </body>
