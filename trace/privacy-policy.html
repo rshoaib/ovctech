@@ -38,7 +38,7 @@
   <div class="wrap">
     <header>
       <h1>📉 Trace — Privacy Policy</h1>
-      <p class="updated">Last updated: September 7, 2026</p>
+      <p class="updated">Last updated: October 1, 2026</p>
     </header>
 
     <section>
@@ -46,7 +46,9 @@
       <p>
         Trace ("we", "our", "the app") is a private, on-device weight-loss journey tracker
         developed and published by <strong>Rizwan Shoaib</strong>. We take your privacy seriously.
-        The health information you log stays on your device. Trace is free and ad-supported:
+        The health information you log stays on your device, with one optional exception: a meal
+        photo you choose to scan is sent to Google's Gemini AI to be identified, as described in
+        the <strong>AI Meal Photo Scanning</strong> section below. Trace is free and ad-supported:
         it displays ads served by Google AdMob, which involves limited advertising data as
         described in the <strong>Advertising</strong> section below. This policy explains what
         data the app uses, why, and how it's handled.
@@ -59,7 +61,10 @@
         <li>
           <span class="term">Health &amp; fitness data you enter</span> — the weight, body photos,
           meals, activity, and sleep you log are stored <strong>locally on your device only</strong>
-          and are never transmitted to our servers.
+          and are never transmitted to our servers. The one exception is a meal photo you choose
+          to scan with the optional AI scanner, which is sent to Google's Gemini AI for
+          identification (see below); the result comes back to your device and only the result is
+          stored.
         </li>
         <li>
           <span class="term">Health Connect (optional)</span> — if you grant permission, Trace reads
@@ -67,9 +72,55 @@
           type them in. This data is read on-device and is never transmitted to our servers.
         </li>
         <li>
-          <span class="term">Camera / Photos (optional)</span> — if you add a body photo, Trace
-          accesses your camera or photo library to import that image. Photos are saved in the app's
-          private storage and never leave your device.
+          <span class="term">Camera / Photos (optional)</span> — if you add a body photo or scan a
+          meal, Trace accesses your camera or photo library to capture or import that image.
+          <strong>Body photos</strong> are saved in the app's private storage and never leave your
+          device. <strong>Meal photos you scan</strong> are sent to Google's Gemini AI as described
+          in the next section.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>AI Meal Photo Scanning (optional)</h2>
+      <p>
+        Trace can estimate the calories and macros in a meal from a photo. This is the only part
+        of the app that sends any of your data over the internet, and it happens only when you
+        choose to scan a meal photo.
+      </p>
+      <ul>
+        <li>
+          <span class="term">What is sent</span> — the meal photo you take or pick, downscaled, and
+          nothing else: no weight, no body photos, no history, no name, no account (we do not have
+          one for you).
+        </li>
+        <li>
+          <span class="term">Who processes it</span> — <strong>Google's Gemini API</strong> (the
+          gemini-2.5-flash model) identifies the food and returns an estimate. Depending on the app
+          version and your settings, the photo goes either directly from your device to Google, or
+          through a relay server we operate (a Google Cloud Function) that holds our API credential
+          so the app does not have to. The relay forwards the photo in memory, does not write it to
+          disk, does not log it and does not store it. If you supply your own Gemini API key in
+          Profile, the photo goes directly to Google under your key and never touches our relay.
+        </li>
+        <li>
+          <span class="term">What Google does with it</span> — these requests are made under Google's
+          paid Generative AI terms, under which Google does not use your content to train or improve
+          its models and its staff do not review it. Google may retain it for a limited period solely
+          to detect abuse. See <a href="https://policies.google.com/privacy" target="_blank"
+          rel="noopener">Google's Privacy Policy</a>.
+        </li>
+        <li>
+          <span class="term">What is kept</span> — the estimate is shown to you for review and, if
+          you save it, stored on your device like any other meal. The photo itself stays on your
+          device.
+        </li>
+        <li>
+          <span class="term">Fair-use limits</span> — when the relay is used, it stores an
+          anonymous, randomly generated identifier for your installation together with a count of
+          scans so that the free scanner cannot be abused. It is created on your device, is not a
+          device or advertising identifier, is excluded from backups, and is erased when you
+          uninstall the app.
         </li>
       </ul>
     </section>
@@ -78,7 +129,9 @@
       <h2>Data We Do NOT Collect</h2>
       <ul>
         <li>❌ We do NOT collect your personal information (name, email, phone number)</li>
-        <li>❌ We do NOT upload your weight, photos, meals, or other health data to any server</li>
+        <li>❌ We do NOT upload your weight, body photos, meals, or other health data to any server.
+          The only thing that ever leaves your device is a meal photo you choose to scan, sent to
+          Google's Gemini AI as described above.</li>
         <li>❌ We do NOT track your location</li>
         <li>❌ We do NOT sell your personal data. Our advertising partner Google AdMob processes
           limited advertising data as described in the Advertising section below.</li>
@@ -139,9 +192,11 @@
         the advertising data described above.
       </p>
       <p>
-        <strong>None of your health data is part of this.</strong> Your weight entries, photos,
-        meals and Health Connect readings stay on your device and are never sent to Google,
-        to us, or to anyone else &mdash; not for ads, not for analytics, not for crash reports.
+        <strong>None of your health data is part of this.</strong> Your weight entries, body
+        photos, meals and Health Connect readings stay on your device and are never sent to Google
+        for advertising, to us, or to anyone else &mdash; not for ads, not for analytics, not for
+        crash reports. A meal photo you choose to scan goes to Google's Gemini API only for that
+        scan (see AI Meal Photo Scanning) and is never used for advertising.
       </p>
 
       <h2>Local Storage</h2>
@@ -154,8 +209,9 @@
         <li>Activity (walks, gym, steps) and sleep entries</li>
         <li>Your goal weight and app settings (units, reminders, app lock)</li>
       </ul>
-      <p>This data never leaves your device. You can clear it at any time from within the app or by
-        clearing the app's data in your device settings.</p>
+      <p>This data never leaves your device, apart from a meal photo you choose to scan (see AI
+        Meal Photo Scanning). You can clear it at any time from within the app or by clearing the
+        app's data in your device settings.</p>
     </section>
 
     <section>
@@ -174,7 +230,8 @@
       <ul>
         <li><span class="term">Health Connect (steps, sleep)</span> — Optional. Used to import your
           steps and last night's sleep. You can deny it and still log manually.</li>
-        <li><span class="term">Camera / Photos</span> — Optional. Used only when you add a body photo.</li>
+        <li><span class="term">Camera / Photos</span> — Optional. Used only when you add a body photo
+          or scan a meal photo.</li>
         <li><span class="term">Notifications</span> — Optional. Used for daily logging reminders.</li>
         <li><span class="term">Advertising ID</span> — Used by Google AdMob to serve ads, as
           described in the Advertising section. You can reset or opt out of it in your device
@@ -188,7 +245,11 @@
     <section>
       <h2>Data Retention &amp; Deletion</h2>
       <p>All user data is stored locally on your device only. We do not store any of your data on
-        external servers, so there is no server-side data to retain or delete.</p>
+        external servers, so there is no server-side data to retain or delete. Meal photos sent to
+        Google's Gemini API for scanning are not stored by us; Google's retention for abuse
+        detection is limited and described in the AI Meal Photo Scanning section. If you wish to
+        request deletion of data processed by Google's Gemini service, contact us and we will help
+        facilitate the request.</p>
       <p><span class="term">How long we retain data:</span> local data is kept on your device for as
         long as the app is installed. There is no expiration — data persists until you choose to
         delete it.</p>
