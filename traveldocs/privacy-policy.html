@@ -41,29 +41,32 @@
     <header>
       <h1>TravelDocs — Privacy Policy</h1>
       <p class="tag">Published by Rizwan Shoaib</p>
-      <p class="updated">Last updated: July 19, 2026</p>
+      <p class="updated">Last updated: October 2, 2026</p>
     </header>
 
     <section>
       <h2>The short version</h2>
       <p class="lead">
         TravelDocs does not collect any data. There are no accounts, no servers, no analytics, no
-        advertising, and <strong>no network connection</strong>. Every document you add stays on your
-        device, in the app's own private storage, protected behind your device's fingerprint or face
-        unlock. That is the entire point of the app.
+        crash reporting, no advertising, no AI services and <strong>no network connection</strong>.
+        Every document you add stays on your device, <strong>encrypted</strong>, behind your phone's
+        fingerprint, face or screen-lock PIN. A document leaves the phone only when you yourself
+        choose to share it.
       </p>
     </section>
 
     <section>
       <h2>How the app works</h2>
       <p>
-        TravelDocs is an offline vault for your own travel documents (passport, residency/ID card,
-        photos, tickets, bank statements, insurance, and so on). When you add a document, the app
-        copies the file you pick into its own private, on-device storage and remembers a little
-        information about it (the file name, which document type you chose, and the date you added
-        it). It also lets you pick a destination and see a guidance checklist of documents that are
-        <em>typically</em> needed. None of this ever leaves your device. The app does not request
-        Internet access — it cannot upload anything, because it has no way to reach a network.
+        TravelDocs is an offline wallet for your own identity documents: ID cards and driving
+        licences (front and back), vehicle registration, passport, utility account, your portrait
+        photos for applications, and any other files such as tickets, bank statements and insurance.
+        You add a document by taking a photo with your phone's camera app, or by choosing an image,
+        a PDF (or one page of it) or another file. The app encrypts it into
+        its own private storage and remembers only which slot or type it belongs to, which side it
+        is, and the date you added it. The original file name is not kept. A destination checklist
+        shows which documents are <em>typically</em> needed for a trip. None of this ever leaves your
+        device. The app does not hold the Internet permission, so it has no way to upload anything.
       </p>
     </section>
 
@@ -71,10 +74,11 @@
       <h2>Data We Do NOT Collect</h2>
       <ul>
         <li>❌ We do NOT collect your personal information (name, email, phone number)</li>
-        <li>❌ We do NOT upload your documents, files, or their details anywhere</li>
+        <li>❌ We do NOT upload your documents, images, files, or their details anywhere</li>
         <li>❌ We do NOT connect to the Internet — the app has no network permission</li>
-        <li>❌ We do NOT track your location</li>
-        <li>❌ We do NOT use any analytics, trackers, or advertising SDKs</li>
+        <li>❌ We do NOT send your documents to any AI or text-recognition (OCR) service</li>
+        <li>❌ We do NOT track your location, and images are re-saved without location data</li>
+        <li>❌ We do NOT use any analytics, crash-reporting, trackers, or advertising SDKs</li>
         <li>❌ We do NOT serve ads and do NOT use an advertising ID</li>
         <li>❌ We do NOT sell or share your data (there is no data to sell or share)</li>
         <li>❌ We do NOT require an account or login</li>
@@ -83,15 +87,43 @@
 
     <section>
       <h2>Where your documents are stored</h2>
+      <ul>
+        <li><span class="term">Encrypted on the device.</span> Each document is encrypted (AES-256-GCM)
+          before it is written. The encryption key is created inside your phone's secure key store
+          (Android Keystore) and cannot be exported from it.</li>
+        <li><span class="term">No copies left behind.</span> Files you pick are read directly from the
+          system picker and encrypted in one step; no unencrypted copy is saved. A camera photo is
+          encrypted as soon as you return from the camera, and the temporary original is deleted.</li>
+        <li><span class="term">Location stripped.</span> Document images are re-saved as plain JPEGs,
+          which removes the location, camera model and other details a phone photo normally carries.
+          Portrait photos are kept pixel-for-pixel (so they still meet visa photo rules); only their
+          hidden metadata is removed. PDF pages are turned into images on the phone itself, using
+          Android's built-in PDF renderer.</li>
+        <li><span class="term">No backup, no transfer.</span> Android cloud backup and device-to-device
+          transfer are both disabled for this app, so your documents are never copied to Google
+          Drive, a new phone, or any other cloud by the operating system.</li>
+        <li><span class="term">Screens protected.</span> Document screens block screenshots and
+          screen recording, and are blanked in the recent-apps switcher.</li>
+        <li><span class="term">Deleting.</span> When you delete a document, the encrypted file and its
+          record are removed.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Sharing a document</h2>
       <p>
-        Documents you add are copied into the app's own private, on-device storage — an area that
-        other apps cannot read. The app does not browse the rest of your files. When you tap
-        <span class="term">Open</span> on a document, your device's normal "open with / share" sheet
-        appears so you can view it in another app of your choice; TravelDocs itself sends nothing
-        anywhere. When you <span class="term">Delete</span> a document, the file is removed from disk
-        and its record is erased. Automatic cloud backup of the app is disabled
-        (<code>allowBackup=false</code>), so your documents are never synced to Google Drive or any
-        other cloud by the operating system.
+        You can send one document at a time to someone else. TravelDocs never creates links or
+        uploads anything for this: it asks you to confirm, then hands a single copy to your phone's
+        standard share menu, and you choose the app and the recipient. You can stamp the copy with a
+        watermark such as "for car rental only" and the date, so it is harder to reuse for anything
+        else. The copy is made available to the app you pick through a temporary, single-use
+        permission. When you come back to TravelDocs that permission is withdrawn and the copy is
+        deleted. Once you have sent a document, what the receiving app and the recipient do with it
+        is governed by their own privacy practices, not this policy.
+      </p>
+      <p>
+        Files that TravelDocs cannot display itself, such as PDFs, are opened in a viewer app the
+        same way: a temporary copy is handed over and deleted when you return.
       </p>
     </section>
 
@@ -100,11 +132,10 @@
       <p>
         On a destination's checklist, an <span class="term">Apply on official site</span> button can
         open the official government or visa-application website for that destination in your phone's
-        normal web browser. This is the only feature that touches the Internet, and it does so by
-        handing off to your browser — a separate app — not by the TravelDocs app connecting to a
-        network itself. TravelDocs never sends any of your personal data or documents to those sites;
-        it simply opens the public page. What happens once you are in your browser is governed by
-        that website's and your browser's own privacy policies.
+        normal web browser. It hands off to your browser — a separate app — rather than TravelDocs
+        connecting to a network itself. TravelDocs never sends any of your personal data or documents
+        to those sites; it simply opens the public page. What happens once you are in your browser is
+        governed by that website's and your browser's own privacy policies.
       </p>
     </section>
 
@@ -115,6 +146,8 @@
           the app on your own device. Your fingerprint and face data are handled entirely by
           Android's secure system; the app never sees or stores them and only receives a
           "success / failure" result.</li>
+        <li><span class="term">Camera</span> — TravelDocs does not hold the camera permission. "Take
+          photo" opens your phone's own camera app, which hands the single photo back to TravelDocs.</li>
         <li><span class="term">No Internet permission</span> — The app deliberately does not hold the
           Internet permission, so it cannot transmit data.</li>
       </ul>
@@ -123,10 +156,11 @@
     <section>
       <h2>Security</h2>
       <p>
-        Access to the app is protected by your device's own biometric or device-credential lock. If
-        no biometric is enrolled, the app tells you it cannot lock itself and encourages you to set
-        up a device screen lock. Because your documents can be sensitive (for example, a passport),
-        keeping a secure lock on your phone is strongly recommended.
+        TravelDocs only opens behind your phone's own lock: fingerprint or face, or your screen-lock
+        PIN, pattern or password. If your phone has no screen lock at all, the app will not open your
+        documents until you set one. It locks again whenever you leave it, except when you come straight back (within two minutes) from the camera, file picker or share menu that you opened from inside the app. No method is perfectly
+        secure, and anyone who knows your phone's PIN can unlock the app, so keep a strong screen
+        lock on your phone.
       </p>
     </section>
 
@@ -169,7 +203,7 @@
 
     <footer>
       © 2026 Rizwan Shoaib. All rights reserved.<br />
-      TravelDocs — a private, offline, on-device travel-document vault.
+      TravelDocs — a private, offline, encrypted, on-device document wallet.
     </footer>
   </div>
 </body>
