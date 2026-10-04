@@ -42,33 +42,38 @@
     <header>
       <h1>Expiro — <span class="accent">Privacy Policy</span></h1>
       <p class="tag">Published by Rizwan Shoaib</p>
-      <p class="updated">Last updated: October 2, 2026</p>
+      <p class="updated">Last updated: October 4, 2026 · describes Expiro 1.0.3, the version on Google Play</p>
     </header>
 
     <section>
       <h2>The short version</h2>
       <p class="lead">
-        Every asset you track, every reminder and every document photo you add stays on your
-        device. There are no accounts, no servers of ours and no sync. From version 1.1.0 Expiro is
-        free and supported by a single banner ad served by <span class="term">Google AdMob</span>;
-        to request it the app needs internet access and uses your device's advertising ID. Nothing
-        you enter ever leaves your phone. What does leave it is the ad request, plus the usage
-        metrics Google's on-device text scanner reports about itself; this policy explains exactly
-        what both involve. Earlier versions carried no ads and had no internet permission at all.
+        Expiro collects nothing. There are no accounts, no servers, no sync, no analytics, and no
+        advertising. The app has no internet permission at all — every asset you track, every reminder,
+        and every document photo you add stays on your device. That is the entire point of the app.
       </p>
     </section>
 
     <section>
       <h2>How the app works</h2>
       <p>
-        Expiro helps you track things that expire (registrations, warranties, insurance,
-        subscriptions) or wear out with use (service intervals and other usage limits), and lets
-        you attach photos of the related documents. Everything you enter — asset names, dates,
-        readings, notes and document images — is stored locally on your device in the app's own
-        private on-device database and file storage. Nothing you enter is transmitted off your
-        device; there is no backend to send it to. The app's only network activity is requesting
-        ads from Google AdMob (see Advertising below) and the usage metrics described under
-        Document scanning below.
+        Expiro helps you track things that expire (registrations, warranties, insurance, subscriptions)
+        or wear out with use (service intervals and other usage limits), and lets you attach photos of
+        the related documents. Everything you enter — asset names, dates, readings, notes and document
+        images — is stored locally on your device in the app's own private on-device database and file
+        storage. The app performs no network requests and transmits no data off your device. In fact,
+        the <span class="term">INTERNET permission is removed from the app entirely</span>, so it is
+        technically incapable of sending your data anywhere. There is no backend to send anything to.
+      </p>
+    </section>
+
+    <section>
+      <h2>Document scanning</h2>
+      <p>
+        "Scan from photo" reads the text on a document image using Google ML Kit text recognition. The
+        recognition model is built into the app and runs entirely on your device. Because the app has no
+        internet permission, neither the image, the text read from it, nor any usage information about
+        the scanner can leave your phone.
       </p>
     </section>
 
@@ -77,68 +82,12 @@
       <ul>
         <li>❌ We do NOT collect your personal information (name, email, phone number)</li>
         <li>❌ We do NOT upload your assets, dates, readings, notes, or document photos anywhere</li>
-        <li>❌ We do NOT collect your location from your device's location services</li>
-        <li>❌ We do NOT run analytics of our own on anything you enter, and there is no crash-reporting SDK</li>
-        <li>❌ We do NOT sell your personal data</li>
+        <li>❌ We do NOT track your location</li>
+        <li>❌ We do NOT use any analytics, trackers, or crash-reporting SDKs</li>
+        <li>❌ We do NOT serve ads and do NOT use an advertising ID</li>
+        <li>❌ We do NOT sell or share your data (there is no data to sell or share)</li>
         <li>❌ We do NOT require an account or login</li>
       </ul>
-    </section>
-
-    <section>
-      <h2>Advertising</h2>
-      <p>
-        From version 1.1.0, Expiro is free and supported by ads. It displays a single banner ad
-        served by <span class="term">Google AdMob</span> at the bottom of the Assets tab. There is
-        no full-screen ad, no ad on launch, and no ad on the Alerts tab or on an asset's own page.
-      </p>
-      <p>
-        To request an ad, the Google Mobile Ads SDK inside the app sends the following to Google
-        and its advertising partners:
-      </p>
-      <ul>
-        <li>Your device's <span class="term">advertising ID</span> (a resettable identifier
-          Android provides for advertising) and app-set ID.</li>
-        <li>Your <span class="term">IP address</span>, from which Google derives an approximate
-          location. Expiro never asks for location permission.</li>
-        <li>Coarse <span class="term">device and app information</span> — device model, OS
-          version, app version, and interaction with the ad itself.</li>
-        <li><span class="term">Diagnostics</span> about the ad request, such as whether it loaded.</li>
-      </ul>
-      <p>
-        This data is collected by Google and shared with Google as an advertising partner. It is
-        used for advertising, analytics and fraud prevention. Google's handling of it is described
-        in <a href="https://policies.google.com/technologies/partner-sites">How Google uses
-        information from sites or apps that use our services</a> and the
-        <a href="https://support.google.com/admob/answer/6128543">AdMob partner policies</a>.
-      </p>
-      <p>
-        <span class="term">Consent in Europe.</span> If you are in the European Economic Area, the
-        United Kingdom or Switzerland, Expiro shows a Google-certified consent form the first time
-        it runs and records your choice. If you do not consent to personalised advertising, the app
-        requests non-personalised ads instead. You can reset your advertising ID or opt out of ad
-        personalisation at any time in Android Settings → Privacy → Ads.
-      </p>
-      <p>Ad content is limited to Google's "G" (general audience) rating.</p>
-    </section>
-
-    <section>
-      <h2>Document scanning</h2>
-      <p>
-        "Scan from photo" reads the text on a document image using
-        <span class="term">Google ML Kit</span> text recognition. The recognition model is bundled
-        inside the app and runs entirely on your device: the image and the text read from it are
-        never sent anywhere.
-      </p>
-      <p>
-        As Google documents in its
-        <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit data
-        disclosure</a>, ML Kit itself may send Google information about how the feature is
-        performing: device information (manufacturer, model, OS version), app package name and
-        version, a per-installation identifier that is not intended to identify you, performance
-        metrics such as latency, API configuration, and error codes. Google uses this for
-        diagnostics and usage analytics, encrypts it in transit, and does not transfer it to third
-        parties. It contains none of your images, text or assets.
-      </p>
     </section>
 
     <section>
@@ -146,10 +95,9 @@
       <p>
         Your assets and their details are saved in the app's private on-device database. Document
         photos you attach are copied into the app's own private storage area on your device; only a
-        local reference to each image is kept. None of it is transmitted off the device at any
-        point — the ad request described above carries no asset, date, note or photo. If you delete
-        an asset or a document inside the app, the corresponding data and image file are removed
-        from your device.
+        local reference to each image is kept. Nothing is transmitted off the device at any point. If
+        you delete an asset or a document inside the app, the corresponding data and image file are
+        removed from your device.
       </p>
     </section>
 
@@ -165,26 +113,22 @@
           only and are never uploaded.</li>
         <li><span class="term">Run at startup</span> — Optional. Used only so your local reminders can
           be re-established after a device restart. It performs no background network activity.</li>
-        <li><span class="term">Internet</span> — Used to request ads, and by ML Kit for the usage
-          metrics described above. Your assets, notes and photos are never sent over it.</li>
-        <li><span class="term">Advertising ID</span> — Used by Google AdMob to serve ads, as
-          described above.</li>
       </ul>
     </section>
 
     <section>
-      <h2>No purchases</h2>
+      <h2>No purchases, no ads</h2>
       <p>
-        Expiro is completely free. There are no in-app purchases. The app is supported by the
-        banner ad described above.
+        Expiro is completely free. There are no in-app purchases and no advertising. It does not contain
+        an advertising SDK and does not request or use an advertising ID.
       </p>
     </section>
 
     <section>
       <h2>Data Retention &amp; Deletion</h2>
       <p>
-        All of your data lives on your device only. Because we operate no servers, there is nothing
-        for us to retain, delete, or hand over. To remove your data you can:
+        All data lives on your device only. Because we operate no servers, there is nothing for us to
+        retain, delete, or hand over. To remove your data you can:
       </p>
       <ul>
         <li>Delete individual assets or documents from within the app, or</li>
@@ -192,17 +136,13 @@
           stored app data, or</li>
         <li>Uninstall the app to permanently remove everything associated with it from your device.</li>
       </ul>
-      <p>
-        Advertising data is held by Google, not by us — use the Android ad settings above to reset
-        or opt out.
-      </p>
     </section>
 
     <section>
       <h2>Children's Privacy</h2>
       <p>
-        Expiro is intended for users aged 13 and over and is not directed at children under 13. We
-        do not knowingly collect personal information from children under 13.
+        The app does not knowingly collect data from anyone, including children under 13, and is
+        suitable for general audiences.
       </p>
     </section>
 
@@ -210,8 +150,7 @@
       <h2>Changes to This Policy</h2>
       <p>
         We may update this policy from time to time. The current version is always indicated by the
-        "Last updated" date above, and the app's Play Data safety section is updated to match before
-        a version that changes what the app does ships.
+        "Last updated" date above.
       </p>
     </section>
 
@@ -219,12 +158,12 @@
       <h2>Contact</h2>
       <p>If you have questions about this privacy policy, please contact us at:</p>
       <p>📧 <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a><br />
-      Developer: <strong>Rizwan Shoaib</strong></p>
+        Developer: <strong>Rizwan Shoaib</strong></p>
     </section>
 
     <footer>
       © 2026 Rizwan Shoaib. All rights reserved.<br />
-      Expiro — asset, expiry &amp; document tracking. Your data stays on your device.
+      Expiro — asset, expiry &amp; document tracking. Offline, private by design.
     </footer>
   </div>
 </body>
