@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <title>Privacy Policy — Coin Council</title>
+  <style>
+    :root { --green: #1F8A56; --green-dark: #0F5C39; --ink: #1f2328; --muted: #60646c; --line: #e6e8eb; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.65;
+      background: #ffffff;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 72px; }
+    header h1 { font-size: 1.9rem; margin: 0 0 6px; color: var(--green-dark); }
+    .updated { color: var(--muted); font-size: 0.95rem; margin: 0 0 28px; }
+    h2 {
+      font-size: 1.2rem; margin: 34px 0 10px; color: var(--green-dark);
+      border-bottom: 2px solid var(--line); padding-bottom: 6px;
+    }
+    p, li { font-size: 1rem; }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    a { color: var(--green); }
+    .term { font-weight: 600; }
+    code { background: #f0f0f3; padding: 2px 6px; border-radius: 6px; font-size: 0.92em; }
+    .notice {
+      margin: 26px 0 0; padding: 14px 16px; border-left: 4px solid var(--green);
+      background: #f4f9f6; border-radius: 0 8px 8px 0;
+    }
+    footer {
+      margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line);
+      color: var(--muted); font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Coin Council — Privacy Policy</h1>
+      <p class="updated">Last updated: October 12, 2026</p>
+    </header>
+
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        Coin Council ("the app", package <code>tech.ovc.coincouncil</code>) is a personal crypto research tool developed by
+        <strong>Rizwan Shoaib</strong> (OVC Tech). A panel of AI models reviews public market data for liquid cryptocurrency
+        pairs, and the app shows a trade idea only when several models agree. It is distributed only to a closed internal
+        testing group. It has <strong>no user accounts, no ads and no analytics</strong>. It never places trades and never asks
+        for exchange or wallet keys. It is not financial advice.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data the app stores</h2>
+      <ul>
+        <li><span class="term">Push notification token</span> — a Firebase Cloud Messaging token for your device, stored in our
+          Firebase (Google Cloud) database so the app can send pick, outcome and BTC-alert notifications. It is deleted
+          automatically when Firebase reports it is no longer valid.</li>
+        <li><span class="term">Device secret</span> — a random value generated on your phone and kept in the phone's secure
+          storage. Our server stores only a one-way hash of it, used to confirm that settings changes and "Run now" requests
+          come from the owner device. It contains no personal information.</li>
+        <li><span class="term">App settings</span> — which AI models are enabled, coin list, scan interval, alert thresholds,
+          quiet hours (with your time-zone offset) and the daily spending cap.</li>
+        <li><span class="term">On-device only</span> — whether you accepted the in-app disclaimer.</li>
+      </ul>
+      <p>The app does not collect your name, email, location, contacts, photos, advertising ID or any other personal data.</p>
+    </section>
+
+    <section>
+      <h2>Third-party services</h2>
+      <ul>
+        <li><span class="term">Binance public market data</span> — our server reads anonymous, keyless public price data. No
+          data about you is sent.</li>
+        <li><span class="term">DeepInfra</span> — our server sends a market summary (prices and indicators only) to AI models
+          hosted by DeepInfra. No personal data is included.</li>
+        <li><span class="term">Google Firebase</span> — hosts the database, server functions and push delivery
+          (<a href="https://firebase.google.com/support/privacy">Firebase privacy</a>).</li>
+        <li><span class="term">Google Play</span> — the app may ask Google Play whether an update is available.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Sharing and retention</h2>
+      <p>We do not sell or share any data. Trade ideas, their outcomes and model scores are derived from public market data and
+        kept for as long as the app is in use. Uninstalling the app removes everything stored on your device; to have your push
+        token removed from our server immediately, email us.</p>
+    </section>
+
+    <section>
+      <h2>Children</h2>
+      <p>The app is not directed to children under 18.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Questions about this policy: <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a></p>
+    </section>
+
+    <footer>© 2026 OVC Tech · Coin Council</footer>
+  </div>
+</body>
+</html>
