@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Privacy Policy for SpeakUp — Confidence Coach. Audio is analysed by Google Gemini and the transcript reviewed by DeepInfra (Qwen), via our own relay. Nothing is stored on our servers." />
+  <meta name="description" content="Privacy Policy for SpeakUp — Confidence Coach. Audio is analysed by Google Gemini; feedback, topics and coaching briefs come from DeepInfra, Anthropic Claude or Google Gemini, via our own relay. Nothing is stored on our servers." />
   <meta name="theme-color" content="#06B6D4" />
   <title>Privacy Policy — SpeakUp: Confidence Coach</title>
   <style>
@@ -165,7 +165,7 @@
         <span>SpeakUp — Confidence Coach</span>
       </div>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: October 1, 2026</p>
+      <p class="updated">Last updated: October 13, 2026</p>
     </section>
 
     <section class="card">
@@ -175,12 +175,14 @@
 
     <section class="card">
       <h2><span class="pill"></span>Audio Recording &amp; AI Analysis</h2>
-      <p>When you start a practice session, SpeakUp records your speech using your device's microphone. To give you coaching feedback, the recording and its analysis are processed by two AI services, reached through our own relay server (a Google Cloud Function we operate). The relay exists so the AI providers' credentials stay on our server and not inside the app; it forwards each request and does <strong>not</strong> store or log your audio or transcript.</p>
+      <p>When you start a practice session, SpeakUp records your speech using your device's microphone. To give you coaching feedback, the recording and its analysis are processed by AI services (Google Gemini, DeepInfra and Anthropic, as set out below), reached through our own relay server (a Google Cloud Function we operate). The relay exists so the AI providers' credentials stay on our server and not inside the app; it forwards each request and does <strong>not</strong> store or log your audio or transcript.</p>
       <ul>
         <li>Recordings are <strong>only</strong> captured during an active practice session that you start.</li>
         <li><strong>Speech analysis (audio):</strong> the recorded clip is sent to <strong>Google Gemini</strong>, which returns the transcript, speaking pace, filler-word count and an overall score. We do not store your audio; once the analysis is returned the clip is no longer needed by us. Processing by Google is governed by Google's privacy policy and paid Generative AI terms, under which your content is not used to train Google's models — see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</li>
-        <li><strong>Post-practice feedback (text):</strong> the transcript and the measurements above (length, pace, filler words, score) are sent to <strong>DeepInfra</strong>, which runs an open-weight Qwen language model to produce the feedback card shown after each take. DeepInfra does not retain prompts or outputs for this model (zero data retention) — see <a href="https://docs.deepinfra.com/account/data-privacy" target="_blank" rel="noopener">DeepInfra data privacy</a>. If this step fails, the feedback is built on your device from the measurements alone.</li>
-        <li><strong>Topic suggestions and coaching briefs (text):</strong> when you ask for a practice topic, or for a coaching brief on a topic — including a custom topic you typed yourself — that request (and the topic text) is sent to <strong>DeepInfra</strong> and answered by the same zero-retention Qwen model. No audio or transcript is involved in these requests.</li>
+        <li><strong>Post-practice feedback (text):</strong> the transcript and the measurements above (length, pace, filler words, score) are sent to <strong>DeepInfra</strong>, which runs an open-weight language model (DeepSeek or Qwen) to produce the feedback card shown after each take. DeepInfra does not retain prompts or outputs for these models (zero data retention) — see <a href="https://docs.deepinfra.com/account/data-privacy" target="_blank" rel="noopener">DeepInfra data privacy</a>. If DeepInfra is unavailable, the same request is sent to <strong>Google Gemini</strong> instead, under the paid terms described above. If both fail, the feedback is built on your device from the measurements alone.</li>
+        <li><strong>Coaching briefs (text):</strong> when you ask for a coaching brief on a topic — including a custom topic you typed yourself — the topic text is sent to <strong>Anthropic</strong>'s Claude model (previously DeepInfra's zero-retention model). Anthropic does not use API content to train its models and deletes it within <strong>30 days</strong>; content flagged as violating its usage policies may be kept for up to 2 years for safety review — see <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>. If Anthropic is unavailable, the request goes to Google Gemini instead.</li>
+        <li><strong>Topic suggestions (text):</strong> when you ask for a practice topic, the request (with the list of topics you were recently shown, so they are not repeated) is sent to <strong>Google Gemini</strong> (previously DeepInfra's zero-retention model); if Gemini's primary model is unavailable, another Gemini model answers.</li>
+        <li>No audio or transcript is sent with topic or coaching-brief requests. We may move a step between the providers named in this section to keep the app working; any one request is answered by only one of them.</li>
         <li>Only the analysis results (score, transcript text, pace, feedback) are saved to your device for your session history.</li>
       </ul>
       <div class="callout warn">
@@ -193,7 +195,7 @@
       <ul>
         <li>Your practice history, scores, streaks, and preferences are stored locally on your device.</li>
         <li>No user account or registration is required.</li>
-        <li>We never sell your personal data. The third parties involved are: Google Gemini (speech analysis) and DeepInfra (post-practice feedback, topic suggestions and coaching briefs), both described above; Google AdMob (advertising); and Google Analytics for Firebase and Firebase Crashlytics (usage analytics and crash reporting), each described below.</li>
+        <li>We never sell your personal data. The third parties involved are: Google Gemini (speech analysis, topic suggestions, and the backup for feedback and coaching briefs), DeepInfra (post-practice feedback) and Anthropic (coaching briefs), all described above; Google AdMob (advertising); and Google Analytics for Firebase and Firebase Crashlytics (usage analytics and crash reporting), each described below.</li>
       </ul>
     </section>
 
@@ -240,7 +242,7 @@
 
     <section class="card">
       <h2><span class="pill"></span>Data Deletion</h2>
-      <p>You can reset your entire practice history at any time from the app's settings. Uninstalling the app also removes all locally stored data. If you wish to request deletion of any data processed by Google's Gemini service or by DeepInfra, contact us at the email below and we will help facilitate the request.</p>
+      <p>You can reset your entire practice history at any time from the app's settings. Uninstalling the app also removes all locally stored data. If you wish to request deletion of any data processed by Google's Gemini service, DeepInfra or Anthropic, contact us at the email below and we will help facilitate the request.</p>
     </section>
 
     <section class="card">

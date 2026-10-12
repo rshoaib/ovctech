@@ -165,7 +165,7 @@ h2 { font-size: 18px; }
 <span>Fasting Buddy</span>
 </div>
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: September 7, 2026</p>
+<p class="updated">Last updated: October 13, 2026</p>
 </section>
 
 <section class="card">
@@ -192,10 +192,11 @@ We never sell your personal data, and your health data stays on your device.
 
 <section class="card">
 <h2><span class="pill"></span>Calorie Scanner</h2>
-<p>When you use the Calorie Scanner, the meal photo you take or choose is sent to Google's Gemini API to estimate calories and macros.</p>
+<p>When you use the Calorie Scanner, the meal photo you take or choose is sent to <strong>Anthropic's Claude API</strong> (the Claude Sonnet model) to estimate calories and macros. If Claude is unavailable, the same photo is sent to <strong>Google's Gemini API</strong> instead. Only one of them answers each scan.</p>
 <p>The photo is relayed through Fasting Buddy's own server (a Google Cloud Function) so that the scanner works with no setup and no API key of your own. The photo is held in memory only for as long as the estimate takes, is <strong>not written to disk, not logged, and never stored</strong>, and is not linked to your name, email or account — we do not have one for you. To apply fair-use limits we store an anonymous, randomly generated identifier for your installation together with a count of scans; it is created on your device, is not a device or advertising identifier, and is erased when you uninstall the app.</p>
-<p>Because these requests are made under a paid Google Cloud account, Google does not use your photos to train or improve its models, and its staff do not review them.</p>
-<p>The estimate and the image stay on your device. Google's privacy policy applies to these API interactions.</p>
+<p><strong>Anthropic</strong> processes the photo under its commercial API terms: it does not use your photos to train its models, and it deletes API inputs and outputs within <strong>30 days</strong>; content flagged as violating its usage policies may be kept for up to 2 years for safety review. See <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>.</p>
+<p>When <strong>Google Gemini</strong> is used, the request is made under a paid Google Cloud account, so Google does not use your photos to train or improve its models and its staff do not review them; Google may keep it for a limited period solely to detect abuse. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+<p>The estimate and the image stay on your device. To ask for deletion of a photo processed by Anthropic or Google, contact us and we will help with the request.</p>
 </section>
 
 <section class="card">
