@@ -79,7 +79,7 @@
 
   <main>
     <div class="card">
-      <span class="badge">Last updated: September 7, 2026</span>
+      <span class="badge">Last updated: October 13, 2026</span>
 
       <p>
         This Privacy Policy explains how the <strong>MyCash</strong> mobile application
@@ -88,7 +88,9 @@
         handles your information. In short: <strong>your cash book stays on your phone, and the
         app is free because it shows a banner ad supplied by Google AdMob.</strong> Serving that
         ad means some technical information about your device is collected by Google &mdash;
-        never your entries.
+        never your entries. If you switch on the optional <strong>AI monthly summary</strong>,
+        the month&rsquo;s <em>totals</em> are sent to an AI service when you ask for a summary
+        (section 4).
       </p>
 
       <h2>1. Advertising</h2>
@@ -131,7 +133,9 @@
       </p>
       <ul>
         <li>No account creation, login, or sign-up.</li>
-        <li>No backend servers or cloud storage operated by us.</li>
+        <li>No accounts or cloud storage operated by us. The only server we operate is the relay
+          for the optional AI monthly summary (section 4), which forwards a request and keeps no
+          copy of it.</li>
         <li>No analytics SDK of our own and no other third-party trackers.</li>
         <li>No access to your contacts, precise location, camera, microphone, or photos.</li>
       </ul>
@@ -144,8 +148,9 @@
       <p>
         Any data you enter &mdash; such as cash in/out entries, amounts, descriptions,
         dates, and currency preferences &mdash; is stored <strong>only on your device</strong>
-        using the device&rsquo;s local storage (AsyncStorage). This information never leaves
-        your phone and is never sent to us or any third party.
+        using the device&rsquo;s local storage (AsyncStorage). Your entries never leave your
+        phone. The one exception is opt-in: if you switch on the AI monthly summary and tap
+        &ldquo;Summarise this month&rdquo;, the aggregated totals described in section 4 are sent.
       </p>
       <p>
         Because this data is stored locally, it remains under your control. If you uninstall
@@ -153,7 +158,41 @@
         recovered by us.
       </p>
 
-      <h2>4. Sharing to WhatsApp and Other Apps</h2>
+      <h2>4. Optional AI Monthly Summary</h2>
+      <p>
+        On Reports &rarr; Month you can switch on <strong>&ldquo;Use AI summary&rdquo;</strong>. It is
+        off until you turn it on, and nothing is sent until you tap &ldquo;Summarise this month&rdquo;.
+        When you do, the App sends, for that month and one currency only:
+      </p>
+      <ul>
+        <li>this month&rsquo;s and last month&rsquo;s totals of money in and money out, and the number of entries;</li>
+        <li>money in and out per day (days that have entries), and money out per weekday;</li>
+        <li>the currency code and symbol, the month, and the App&rsquo;s language;</li>
+        <li><strong>only if you also switch on &ldquo;Also send entry descriptions&rdquo;</strong>: your
+          entry descriptions, grouped and shortened to 40 characters, each with its total and count
+          (never individual entries, their dates, or attachments).</li>
+      </ul>
+      <p>
+        It never sends attachments, photos, contacts, your other currencies or any identifier of
+        you. The request goes through our own relay server (a Google Cloud Function we operate in
+        the EU). The relay exists so the AI providers&rsquo; credentials stay on our server and not
+        inside the App; it forwards the request and does not store or log its content. To apply a
+        daily limit it keeps only a usage counter tied to a random ID the App creates on your
+        device; that ID is not linked to you, your device&rsquo;s advertising ID or your entries.
+      </p>
+      <p>
+        The summary is written by <strong>DeepInfra</strong>, running an open-weight language model
+        (DeepSeek). DeepInfra does not retain prompts or outputs for this model (zero data
+        retention) &mdash; see <a href="https://docs.deepinfra.com/account/data-privacy">DeepInfra data privacy</a>.
+        If DeepInfra is unavailable, <strong>Google Gemini</strong> writes it instead, under
+        Google&rsquo;s privacy policy and paid Generative AI terms, under which your content is not
+        used to train Google&rsquo;s models &mdash; see
+        <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. The summary is
+        shown on screen and not saved by us. You can switch the feature off at any time with the
+        same switch.
+      </p>
+
+      <h2>5. Sharing to WhatsApp and Other Apps</h2>
       <p>
         MyCash includes an optional feature to share an individual entry as a text message
         through WhatsApp or your device&rsquo;s standard share sheet. This action is performed
@@ -162,37 +201,38 @@
         practices of WhatsApp or any other app you select are governed by their own policies.
       </p>
 
-      <h2>5. Permissions</h2>
+      <h2>6. Permissions</h2>
       <p>
         MyCash does not request access to sensitive device permissions such as precise location,
         contacts, camera, or microphone. It declares the <code>INTERNET</code> permission and the
-        advertising-ID permission, both solely so the banner ad described above can be requested.
-        Your entries never travel over that connection.
+        advertising-ID permission. The connection is used to request the banner ad described
+        above and, only when you ask for one, to send the AI monthly summary request in section 4.
+        Your individual entries never travel over it.
       </p>
 
-      <h2>6. Children&rsquo;s Privacy</h2>
+      <h2>7. Children&rsquo;s Privacy</h2>
       <p>
         MyCash is intended for a general adult audience and is not directed at children under 13.
         We do not knowingly collect personal information from children. Ad content is restricted
         to a general-audience rating.
       </p>
 
-      <h2>7. Data Security</h2>
+      <h2>8. Data Security</h2>
       <p>
-        Your cash-book data is stored only on your own device and is never transmitted, so its
-        security depends on your device&rsquo;s own protections (e.g. screen lock and OS-level
-        security). We recommend keeping your device secured. The advertising data described in
-        section 1 is sent to Google over an encrypted (TLS) connection.
+        Your cash-book data is stored only on your own device, so its security depends on your
+        device&rsquo;s own protections (e.g. screen lock and OS-level security). We recommend
+        keeping your device secured. The advertising data in section 1 and the optional AI summary
+        request in section 4 are sent over encrypted (TLS) connections.
       </p>
 
-      <h2>7. Changes to This Policy</h2>
+      <h2>9. Changes to This Policy</h2>
       <p>
         We may update this Privacy Policy from time to time. Any changes will be posted on this
         page with a revised &ldquo;Last updated&rdquo; date. Continued use of the App after
         changes are posted constitutes acceptance of the updated policy.
       </p>
 
-      <h2>8. Contact Us</h2>
+      <h2>10. Contact Us</h2>
       <p>
         If you have any questions about this Privacy Policy, you can contact us at:
         <br />
