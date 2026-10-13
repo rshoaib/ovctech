@@ -158,12 +158,12 @@
         <span>Hala — Learn Emirati Arabic</span>
       </div>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: September 7, 2026</p>
+      <p class="updated">Last updated: October 13, 2026</p>
     </section>
 
     <section class="card">
       <h2><span class="pill"></span>Your Privacy Matters</h2>
-      <p class="lead">Hala, published by Rizwan Shoaib, is built with a privacy-first approach. All your learning data stays on your device.</p>
+      <p class="lead">Hala, published by Rizwan Shoaib, is built with a privacy-first approach. All your learning data stays on your device. The one optional exception is Conversation practice: messages you type there are sent to an AI service to write the tutor's replies, as described below.</p>
     </section>
 
     <section class="card">
@@ -174,10 +174,25 @@
         <li>No user account or registration is required.</li>
       </ul>
       <div class="callout">
-        We never collect, transmit, or sell your personal learning data. The one
-        exception is our advertising partner, Google AdMob, which collects
-        limited device data to show ads — see “Advertising” below.
+        We never sell your data. Your learning progress is never transmitted. Two
+        things do leave your device: limited device data collected by our
+        advertising partner, Google AdMob (see “Advertising”), and the messages
+        you choose to type in Conversation practice (see below).
       </div>
+    </section>
+
+    <section class="card">
+      <h2><span class="pill"></span>Conversation Practice (AI)</h2>
+      <p>Conversation practice lets you chat with an AI tutor in Emirati Arabic. It is optional and only runs when you open it and pick a scenario.</p>
+      <ul>
+        <li><strong>What is sent:</strong> the scenario you picked, your level, the messages you type in the chat and the last few lines of the conversation (so the tutor can reply in context). Nothing else — no name, no account, no learning history.</li>
+        <li><strong>How it travels:</strong> through a relay server we operate (a Google Cloud Function) that holds our AI credentials so the app doesn't have to. The relay forwards your messages in memory and does <strong>not</strong> store or log them. To keep the free feature fair, it counts messages per installation against a random identifier created on your device (not a device or advertising ID), and allows 40 messages a day.</li>
+        <li><strong>Who processes it:</strong> <strong>Anthropic</strong> (the Claude model) writes the tutor's replies. If Anthropic is unavailable, the same request goes to <strong>Google Gemini</strong> instead. Only one of them answers each message.</li>
+        <li><strong>Anthropic</strong> does not use API content to train its models and deletes it within <strong>30 days</strong>; content flagged as violating its usage policies may be kept for up to 2 years for safety review — see <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>.</li>
+        <li><strong>Google Gemini</strong> is used under Google's paid API terms: your content is not used to train Google's models or reviewed by its staff; Google may keep it for a limited period solely to detect abuse — see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+        <li>The chat itself is not saved by the app; it disappears when you leave the screen.</li>
+      </ul>
+      <div class="callout">Please don't type personal details (full name, phone number, address) in the chat.</div>
     </section>
 
     <section class="card">
@@ -230,7 +245,7 @@
 
     <section class="card">
       <h2><span class="pill"></span>Data Deletion</h2>
-      <p>You can reset all your learning data at any time from the app's settings. Uninstalling the app also removes all locally stored data.</p>
+      <p>You can reset all your learning data at any time from the app's settings. Uninstalling the app also removes all locally stored data. To ask for deletion of Conversation practice messages processed by Anthropic or Google, contact us and we will help with the request.</p>
     </section>
 
     <section class="card">
