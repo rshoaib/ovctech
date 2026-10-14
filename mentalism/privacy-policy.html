@@ -158,12 +158,12 @@
         <span>Mentalism Mastery</span>
       </div>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: September 7, 2026</p>
+      <p class="updated">Last updated: October 14, 2026</p>
     </section>
 
     <section class="card">
       <h2><span class="pill"></span>Your Privacy Matters</h2>
-      <p class="lead">Mentalism Mastery, published by Rizwan Shoaib, is designed with your privacy as a priority. Your learning content stays on your device. The app is free and supported by ads served through Google AdMob, described below.</p>
+      <p class="lead">Mentalism Mastery, published by Rizwan Shoaib, is designed with your privacy as a priority. Your learning content stays on your device. The app is free and supported by ads served through Google AdMob, described below. One optional drill, &ldquo;Read This Person&rdquo;, asks an AI service to write practice scenes; what it sends is described below, and it never includes anything you type or choose.</p>
     </section>
 
     <section class="card">
@@ -187,6 +187,17 @@
       <div class="callout">
         This advertising data is collected and processed by Google as an independent advertising provider, not by us.
       </div>
+    </section>
+
+    <section class="card">
+      <h2><span class="pill"></span>Read This Person (AI-written scenes)</h2>
+      <p>&ldquo;Read This Person&rdquo; is an optional drill in the Practice tab. Each time you ask for a scene, an AI model writes a short realistic situation with a person&rsquo;s observable behaviour, four possible readings, and an explanation of every cue. It runs only when you open the drill and tap the button.</p>
+      <ul>
+        <li><strong>What is sent:</strong> the difficulty you picked, the app&rsquo;s language, the titles of the last few scenes you were shown (so the next one is different), and a random identifier created on your device for the daily limit. That identifier is not a device or advertising ID and is not linked to you. Nothing else &mdash; there is nothing to type in this drill, and <strong>your answer never leaves your device</strong>: the whole scene, including the correct reading and the explanation, arrives at once and the app hides them until you have chosen.</li>
+        <li><strong>How it travels:</strong> through a relay server we operate (a Google Cloud Function in the EU) that holds our AI credentials so the app does not have to. The relay forwards the request in memory and does <strong>not</strong> store the scene or log its content; it records only counts, timing and cost. The drill allows 8 scenes a day per installation.</li>
+        <li><strong>Who writes the scenes:</strong> <strong>Anthropic</strong> (the Claude model). If Anthropic is unavailable, the same request goes to <strong>Google Gemini</strong> instead. Only one of them answers each request, and both act as our service providers under their API terms: requests are not used to train their models. Anthropic may keep API inputs and outputs for up to 30 days for abuse monitoring; Google&rsquo;s paid API terms apply to Gemini.</li>
+        <li><strong>Offline:</strong> without a connection the drill is unavailable and the app offers its built-in drills instead; nothing is queued or sent later.</li>
+      </ul>
     </section>
 
     <section class="card">
@@ -215,13 +226,13 @@
       <ul>
         <li><strong>Notifications</strong> — Used only for practice reminders you choose to enable.</li>
         <li><strong>Vibration</strong> — Used for haptic feedback on interactions.</li>
-        <li><strong>Internet</strong> — Used to load content updates and to load ads from Google AdMob.</li>
+        <li><strong>Internet</strong> — Used to load ads from Google AdMob, to send analytics and crash reports, and to fetch AI-written scenes for the &ldquo;Read This Person&rdquo; drill.</li>
       </ul>
     </section>
 
     <section class="card">
       <h2><span class="pill"></span>Data Deletion</h2>
-      <p>You can reset all locally stored data at any time from the app's settings. Uninstalling the app also removes all locally stored data. You can reset or delete your advertising ID at any time from your device settings (Settings → Google → Ads). If you have questions about advertising data, contact us at the email below.</p>
+      <p>You can reset all locally stored data at any time from the app's settings. Uninstalling the app also removes all locally stored data. You can reset or delete your advertising ID at any time from your device settings (Settings → Google → Ads). The &ldquo;Read This Person&rdquo; drill stores nothing about you on our side; the random daily-limit identifier is removed with the app&rsquo;s data. If you have questions about advertising data or about requests processed by Anthropic or Google, contact us at the email below.</p>
     </section>
 
     <section class="card">
