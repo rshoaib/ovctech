@@ -165,7 +165,7 @@ h2 { font-size: 18px; }
 <span>Fasting Buddy</span>
 </div>
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: October 13, 2026</p>
+<p class="updated">Last updated: October 19, 2026</p>
 </section>
 
 <section class="card">
@@ -212,7 +212,7 @@ We never sell your personal data, and your health data stays on your device.
 <li><strong>Firebase Crashlytics</strong> &mdash; crash reporting. It collects stack traces, the app state at the moment of a crash, device metadata and a Crashlytics installation identifier, so we can find and fix faults.</li>
 <li><strong>Firebase Performance Monitoring</strong> &mdash; performance metrics such as start-up time and network latency, plus device metadata and an IP-derived country.</li>
 </ul>
-<p>Google acts as our <strong>service provider</strong> for these. The data is used to run and improve the app; it is not sold and it is not shared with advertisers. It is separate from the advertising data described above. <strong>Fasting Buddy does not use the Android advertising ID.</strong> That permission is removed from the app at build time, so neither the ads nor the analytics can read it; the identifiers above are app-scoped instead.</p>
+<p>Google acts as our <strong>service provider</strong> for these. The data is used to run and improve the app; it is not sold and it is not shared with advertisers. It is separate from the advertising data described above. <strong>Fasting Buddy declares the Android advertising ID permission</strong> (<code>com.google.android.gms.permission.AD_ID</code>), so Google AdMob and Google Analytics for Firebase may read your resettable Google advertising ID, for ads and measurement. You can reset it or opt out of ad personalisation at any time in your Android settings (Settings → Privacy → Ads); if you do, apps receive a zeroed ID instead.</p>
 
 <h2><span class="pill"></span>Permissions</h2>
 <ul>
