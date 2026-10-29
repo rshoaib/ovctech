@@ -26,24 +26,27 @@
 
 <h1>Social Stats Tracker — Privacy Policy</h1>
 
-<p>Last updated: July 3, 2026</p>
+<p>Last updated: October 29, 2026 · describes Social Stats Tracker 1.0.7, the version on Google Play</p>
 
 <h2>Introduction</h2>
-<p>Social Stats Tracker ("we", "our", "the app") is a mobile application developed and published by <strong>Rizwan Shoaib</strong> that lets you track YouTube and Instagram social media statistics together in one dashboard. We take your privacy seriously. This policy explains what data we access, why, and how it's handled.</p>
+<p>Social Stats Tracker ("we", "our", "the app") is a mobile application developed and published by <strong>Rizwan Shoaib</strong> that shows your YouTube channel analytics in one dashboard. We take your privacy seriously. This policy explains what data the app accesses, why, and how it is handled. In short: the app has no server of ours, your YouTube data travels from Google to your device only, and the app is free because it shows ads from Google AdMob.</p>
 
 <h2>What the App Does</h2>
-<p>Social Stats Tracker displays public statistics for the YouTube channels and Instagram accounts you choose to follow — such as subscriber and follower counts, view counts, and other publicly available metrics. This data is retrieved through the official YouTube and Instagram APIs and shown to you in a single, easy-to-read dashboard.</p>
+<p>Social Stats Tracker opens with realistic <strong>sample data</strong> so you can explore the dashboard. If you choose to <strong>connect your Google account</strong>, the app reads your own YouTube channel's statistics — subscribers, views, watch time, engagement and growth — with <strong>read-only</strong> access and shows them in the same dashboard. The app can never post, edit, or change anything on your account.</p>
+<p>The Instagram dashboard in this version is a design preview populated with sample data. The app does not ask you to connect an Instagram account.</p>
 
 <h2>Data We Access</h2>
 <ul>
-    <li><strong>Public Social Media Statistics</strong> — The app uses the YouTube and Instagram APIs to fetch publicly available channel and account statistics for the profiles you add. Only public data is accessed. The app does not require you to log in to your YouTube or Instagram account, and it does not access any private, non-public information.</li>
+    <li><strong>Google Account sign-in (optional)</strong> — If you connect your account, sign-in is handled by Google's OAuth 2.0 flow. The app requests the read-only YouTube scopes (<code>youtube.readonly</code> and <code>yt-analytics.readonly</code>) and receives an access token and the basic profile Google returns with sign-in. The token stays on your device and is used only to request your channel's statistics. We never see or store your Google password.</li>
+    <li><strong>Your YouTube channel analytics</strong> — Retrieved from the YouTube Data API and the YouTube Analytics API using your token, shown in the app and cached on your device so the dashboard loads quickly. This data goes from Google to your device only; it is never sent to us, because we operate no servers.</li>
 </ul>
+<p>Social Stats Tracker's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. The app uses YouTube API Services; by using it you also agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of your data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
 <h2>Data We Do NOT Collect</h2>
 <ul>
-    <li>We do NOT collect any personal data</li>
-    <li>We do NOT require you to create an account or sign in</li>
-    <li>We do NOT access private or non-public information from your social media accounts</li>
+    <li>We do NOT receive your YouTube data — it is read on your device and never uploaded to us or to anyone else</li>
+    <li>We do NOT require an account with us; connecting your Google account is optional and the app works with sample data until you do</li>
+    <li>We do NOT post, edit, or change anything on your YouTube account (read-only access)</li>
     <li>We do NOT track your location</li>
     <li>We do NOT sell your personal data</li>
     <li>We do NOT share your data with any third parties, except as needed to display ads (see below)</li>
@@ -52,16 +55,16 @@
 <h2>Local Storage</h2>
 <p>The app stores the following data locally on your device:</p>
 <ul>
-    <li>The list of YouTube channels and Instagram accounts you have chosen to track</li>
-    <li>Cached statistics for offline viewing</li>
+    <li>Your sign-in state and access token (if you connected your Google account)</li>
+    <li>Cached channel statistics for quick and offline viewing</li>
     <li>Your display preferences and settings</li>
 </ul>
-<p>This data never leaves your device except to communicate with the YouTube and Instagram APIs to refresh statistics. You can clear it at any time by clearing the app's data in your device settings.</p>
+<p>This data never leaves your device except to communicate with Google's sign-in and YouTube APIs to refresh your statistics. You can clear it at any time by signing out in the app or clearing the app's data in your device settings.</p>
 
 <h2>Third-Party Services</h2>
 <ul>
-    <li><strong>YouTube API</strong> — We use the YouTube Data API to retrieve public channel statistics. This communication is secured via HTTPS. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
-    <li><strong>Instagram API</strong> — We use the Instagram API to retrieve public account statistics. This communication is secured via HTTPS. See <a href="https://privacycenter.instagram.com/policy">Instagram's Privacy Policy</a>.</li>
+    <li><strong>Google Sign-In</strong> — Authentication is handled by Google's OAuth 2.0 service. We only receive a token to read your YouTube data. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+    <li><strong>YouTube Data API and YouTube Analytics API</strong> — Used, with your read-only token, to retrieve your channel's statistics. This communication is secured via HTTPS.</li>
     <li><strong>Google AdMob (Ads)</strong> — We display ads served by Google AdMob to support the free version of the app. When an ad is requested, Google and its partners may collect and process:
         <ul>
             <li>Your Advertising ID (a resettable identifier that you can reset or disable in your device settings)</li>
@@ -69,21 +72,25 @@
             <li>Device information (model, OS version, language, country)</li>
             <li>Ad-interaction events (impressions, clicks)</li>
         </ul>
-        For details, see <a href="https://policies.google.com/technologies/ads">How Google uses data when you use our partners' sites or apps</a>.
+        Your YouTube data is never part of an ad request. For details, see <a href="https://policies.google.com/technologies/ads">How Google uses data when you use our partners' sites or apps</a>.
     </li>
 </ul>
 
 <h2>Permissions</h2>
 <ul>
-    <li><strong>Internet</strong> — Required to communicate with the YouTube and Instagram APIs and to display ads.</li>
+    <li><strong>Internet</strong> — Required for Google sign-in, to read your YouTube statistics from Google's APIs, and to display ads.</li>
+    <li><strong>Advertising ID</strong> — Used by Google AdMob to serve and measure ads, as described above.</li>
 </ul>
+
+<h2>Revoking Access</h2>
+<p>You can sign out inside the app at any time, which deletes the token from your device. You can also revoke the app's access to your Google account at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
 
 <h2>Data Retention &amp; Deletion</h2>
 <p>All user data is stored <strong>locally on your device only</strong>. We do not store any of your data on external servers.</p>
-<p><strong>How long we retain data:</strong> Local data (your tracked accounts, cached statistics, preferences) is kept on your device for as long as the app is installed.</p>
+<p><strong>How long we retain data:</strong> Local data (sign-in state, cached statistics, preferences) is kept on your device for as long as the app is installed.</p>
 <p><strong>How to delete your data:</strong></p>
 <ul>
-    <li>Remove tracked accounts from within the app to clear their cached statistics.</li>
+    <li>Sign out in the app to remove the token and clear the cached statistics.</li>
     <li>Go to your device's <strong>Settings &rarr; Apps &rarr; Social Stats Tracker &rarr; Storage &rarr; Clear Data</strong> to erase all locally stored app data.</li>
     <li>Uninstalling the app will permanently delete all associated data from your device.</li>
 </ul>
