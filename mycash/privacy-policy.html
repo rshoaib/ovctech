@@ -79,7 +79,7 @@
 
   <main>
     <div class="card">
-      <span class="badge">Last updated: October 13, 2026</span>
+      <span class="badge">Last updated: October 29, 2026 · describes MyCash 1.3.2, the version on Google Play</span>
 
       <p>
         This Privacy Policy explains how the <strong>MyCash</strong> mobile application
@@ -137,7 +137,9 @@
           for the optional AI monthly summary (section 4), which forwards a request and keeps no
           copy of it.</li>
         <li>No analytics SDK of our own and no other third-party trackers.</li>
-        <li>No access to your contacts, precise location, camera, microphone, or photos.</li>
+        <li>No access to your contacts, precise location, or microphone. The camera and your photo
+          library are used only when you choose to attach a receipt or bill photo to an entry; the
+          photo is stored on your device and never uploaded (section 3).</li>
       </ul>
       <p class="note">
         Earlier versions of MyCash carried no ads at all. This policy was updated when that
@@ -151,6 +153,12 @@
         using the device&rsquo;s local storage (AsyncStorage). Your entries never leave your
         phone. The one exception is opt-in: if you switch on the AI monthly summary and tap
         &ldquo;Summarise this month&rdquo;, the aggregated totals described in section 4 are sent.
+      </p>
+      <p>
+        <strong>Receipt photos.</strong> You can attach a photo of a receipt or bill to an entry,
+        taken with the camera or picked from your gallery. The image is copied into the App&rsquo;s
+        own private storage on your device, is never uploaded, and is never part of an ad request or
+        an AI summary request. It is deleted with the entry, or when you uninstall the App.
       </p>
       <p>
         Because this data is stored locally, it remains under your control. If you uninstall
@@ -204,7 +212,10 @@
       <h2>6. Permissions</h2>
       <p>
         MyCash does not request access to sensitive device permissions such as precise location,
-        contacts, camera, or microphone. It declares the <code>INTERNET</code> permission and the
+        contacts, or microphone. It declares the <code>CAMERA</code> permission, used only when you
+        choose to photograph a receipt or bill for an entry (the system photo picker is used for the
+        gallery and needs no permission); the image stays on your device as described in section 3.
+        It declares the <code>INTERNET</code> permission and the
         advertising-ID permission. The connection is used to request the banner ad described
         above and, only when you ask for one, to send the AI monthly summary request in section 4.
         Your individual entries never travel over it.
