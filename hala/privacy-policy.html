@@ -158,12 +158,12 @@
         <span>Hala — Learn Emirati Arabic</span>
       </div>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: October 13, 2026</p>
+      <p class="updated">Last updated: October 31, 2026</p>
     </section>
 
     <section class="card">
       <h2><span class="pill"></span>Your Privacy Matters</h2>
-      <p class="lead">Hala, published by Rizwan Shoaib, is built with a privacy-first approach. All your learning data stays on your device. The one optional exception is Conversation practice: messages you type there are sent to an AI service to write the tutor's replies, as described below.</p>
+      <p class="lead">Hala, published by Rizwan Shoaib, is built with a privacy-first approach. All your learning data stays on your device. Two optional features use AI services: Conversation practice (the messages you type) and, for Hala Premium subscribers, the Voice tutor (your voice during a lesson). Both are described below.</p>
     </section>
 
     <section class="card">
@@ -174,10 +174,11 @@
         <li>No user account or registration is required.</li>
       </ul>
       <div class="callout">
-        We never sell your data. Your learning progress is never transmitted. Two
-        things do leave your device: limited device data collected by our
-        advertising partner, Google AdMob (see “Advertising”), and the messages
-        you choose to type in Conversation practice (see below).
+        We never sell your data. Your learning progress is never transmitted. What
+        does leave your device: limited device data collected by our advertising
+        partner, Google AdMob (see “Advertising”), the messages you choose to type
+        in Conversation practice, and — only if you subscribe to Hala Premium and
+        open a voice lesson — your voice and your subscription status (see below).
       </div>
     </section>
 
@@ -193,6 +194,28 @@
         <li>The chat itself is not saved by the app; it disappears when you leave the screen.</li>
       </ul>
       <div class="callout">Please don't type personal details (full name, phone number, address) in the chat.</div>
+    </section>
+
+    <section class="card">
+      <h2><span class="pill"></span>Voice Tutor (Hala Premium)</h2>
+      <p>Hala Premium is an optional monthly subscription that adds a live AI voice tutor and practice drills. Nothing below happens unless you subscribe and open a voice lesson or drill.</p>
+      <ul>
+        <li><strong>What is sent:</strong> while a voice lesson is open, the sound from your microphone, plus the dialect, explanation language, tutor voice and level you picked. In a practice drill, the short recording of you repeating a phrase. No name, no account, no learning history.</li>
+        <li><strong>How it travels:</strong> for a live lesson, our server (a Google Cloud Function) gives the app a short-lived key, and the app then streams your voice directly to OpenAI over an encrypted connection. A drill recording goes through our server to OpenAI for transcription. Our server never records or stores your voice.</li>
+        <li><strong>Who processes it:</strong> OpenAI hears your voice and writes and speaks the tutor's replies. OpenAI does not use API content to train its models and keeps it for up to 30 days to detect abuse — see OpenAI's Privacy Policy.</li>
+        <li><strong>What we keep:</strong> a random identifier created on your device (not a device or advertising ID), the minutes you used in each billing period, the length and settings of each lesson, and the optional 👍/👎 rating and note you choose to send. We keep no audio and no transcript of your lessons. Session records, including any note you send, are deleted after 30 days. A text-free summary of each lesson (length, settings, rating) and your monthly minute totals are kept to run the service and enforce the 150-minute allowance, and are deleted on request.</li>
+        <li><strong>Microphone:</strong> used only while a voice lesson or drill is open on screen. Hala never listens in the background.</li>
+      </ul>
+      <p class="callout">Voice lessons are AI-generated and can contain mistakes. Please don't say personal details (full name, phone number, address) during a lesson.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="pill"></span>Subscriptions &amp; Payments</h2>
+      <ul>
+        <li>Hala Premium is billed monthly by Google Play until you cancel. Payment is handled entirely by Google Play — we never see your card or bank details.</li>
+        <li>To check your subscription, the app and our server use RevenueCat, a subscription service. RevenueCat receives the Google Play purchase receipt and the random identifier described above, and tells the app and our server whether the subscription is active. See RevenueCat's Privacy Policy.</li>
+        <li>You can cancel at any time in Google Play → Payments &amp; subscriptions → Subscriptions. Premium stays active until the end of the period you paid for.</li>
+      </ul>
     </section>
 
     <section class="card">
@@ -240,12 +263,14 @@
         <li><strong>Notifications</strong> — Used only for daily practice reminders you choose to enable.</li>
         <li><strong>Vibration</strong> — Used for haptic feedback on correct answers and milestones.</li>
         <li><strong>Internet</strong> — Required to load ads from Google AdMob. The app's learning content works without a network connection.</li>
+        <li><strong>Microphone</strong> — Hala Premium only: used while a voice lesson or practice drill is open, so the tutor can hear you. You can deny or revoke it at any time in Android settings; everything else in Hala keeps working.</li>
+        <li><strong>Google Play billing</strong> — Used to buy and restore the optional Hala Premium subscription.</li>
       </ul>
     </section>
 
     <section class="card">
       <h2><span class="pill"></span>Data Deletion</h2>
-      <p>You can reset all your learning data at any time from the app's settings. Uninstalling the app also removes all locally stored data. To ask for deletion of Conversation practice messages processed by Anthropic or Google, contact us and we will help with the request.</p>
+      <p>You can reset all your learning data at any time from the app's settings. Uninstalling the app also removes all locally stored data. To ask for deletion of Conversation practice messages processed by Anthropic or Google, or of the voice tutor records described above, contact us with the Support ID shown on the app's Contact screen and we will delete them.</p>
     </section>
 
     <section class="card">
