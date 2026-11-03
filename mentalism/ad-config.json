@@ -1,0 +1,12 @@
+{
+  "$comment": "Mentalism Mastery (1.15.2+ / vc52+) Home interstitial config, read once per cold start and cached. Every field optional; caps are clamped in-app (minIntervalMin >= 5, maxPerDay <= 4, maxPerSession <= 4). blockedCountries replaces the built-in list (device region setting OR time zone). enabled=false turns the interstitial off everywhere. Source: services/adRemoteConfig.ts.",
+  "homeInterstitial": {
+    "enabled": true,
+    "blockedCountries": ["ES", "BR", "HR", "DE", "GR"],
+    "minIntervalMin": 15,
+    "maxPerDay": 2,
+    "maxPerSession": 1,
+    "warmupMin": 3,
+    "newInstallHours": 24
+  }
+}
