@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <title>Privacy Policy — Paper Trader</title>
+  <style>
+    :root { --green: #1F8A56; --green-dark: #0F5C39; --ink: #1f2328; --muted: #60646c; --line: #e6e8eb; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.65;
+      background: #ffffff;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 72px; }
+    header h1 { font-size: 1.9rem; margin: 0 0 6px; color: var(--green-dark); }
+    .updated { color: var(--muted); font-size: 0.95rem; margin: 0 0 28px; }
+    h2 {
+      font-size: 1.2rem; margin: 34px 0 10px; color: var(--green-dark);
+      border-bottom: 2px solid var(--line); padding-bottom: 6px;
+    }
+    p, li { font-size: 1rem; }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    a { color: var(--green); }
+    .term { font-weight: 600; }
+    code { background: #f0f0f3; padding: 2px 6px; border-radius: 6px; font-size: 0.92em; }
+    .notice {
+      margin: 26px 0 0; padding: 14px 16px; border-left: 4px solid var(--green);
+      background: #f4f9f6; border-radius: 0 8px 8px 0;
+    }
+    footer {
+      margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line);
+      color: var(--muted); font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Paper Trader — Privacy Policy</h1>
+      <p class="updated">Last updated: November 5, 2026</p>
+    </header>
+
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        Paper Trader ("the app") is a personal paper-trading and strategy-research tool for Binance USDⓈ-M perpetual futures,
+        developed by <strong>Rizwan Shoaib</strong> (OVC Tech). Every trade in the app is simulated with virtual USDT. The app
+        never connects to an exchange account, never asks for exchange API keys or wallet keys, never places real orders and
+        handles no real money. It is distributed only to a closed internal testing group. It has <strong>no ads and no
+        analytics</strong>, and it is not financial advice.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data the app stores</h2>
+      <ul>
+        <li><span class="term">Anonymous user ID</span> — the app signs in with Firebase Anonymous Authentication, which creates
+          a random user ID. No name, email or phone number is asked for or stored.</li>
+        <li><span class="term">Your paper-trading records</span> — the virtual account balance, simulated orders, positions,
+          completed trades, the checklist and strategy you tagged each trade with, strategy names and rules you write, journal
+          notes you type, and the reports computed from them. These are stored in our Firebase (Google Cloud Firestore)
+          database under your anonymous user ID so the server can simulate stop-loss, take-profit, limit fills, funding and
+          liquidation while the app is closed.</li>
+        <li><span class="term">Push notification token</span> — a Firebase Cloud Messaging token, used only to tell you when a
+          strategy reaches 30, 50 or 100 completed paper trades.</li>
+        <li><span class="term">App settings</span> — the simulated fee and slippage model and your starting balance.</li>
+      </ul>
+      <p>The app does not collect your location, contacts, photos, advertising ID or any other personal data. Please do not
+        type personal information into journal notes.</p>
+    </section>
+
+    <section>
+      <h2>Third-party services</h2>
+      <ul>
+        <li><span class="term">Binance public market data</span> — the app and our server read anonymous, keyless public price,
+          order-book and funding data. No data about you is sent to Binance.</li>
+        <li><span class="term">Google Firebase</span> — authentication, database, server functions and push delivery
+          (<a href="https://firebase.google.com/support/privacy">Firebase privacy</a>).</li>
+        <li><span class="term">Google Play</span> — the app may ask Google Play whether an update is available.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Sharing, security and retention</h2>
+      <p>We do not sell or share any data. All traffic is encrypted in transit (HTTPS/TLS). Only you (through the app) and the
+        app's own server can read your records; other users cannot. Records are kept while you use the app. "Reset account" in
+        the app starts a new paper account. To have all records for your anonymous ID deleted from our server, email us;
+        uninstalling the app removes everything stored on your device.</p>
+    </section>
+
+    <section>
+      <h2>Children</h2>
+      <p>The app is intended for adults (18+) and is not directed to children.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Questions about this policy: <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a></p>
+    </section>
+
+    <footer>© 2026 OVC Tech · Paper Trader</footer>
+  </div>
+</body>
+</html>
