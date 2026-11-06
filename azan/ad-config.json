@@ -1,0 +1,17 @@
+{
+  "$comment": "Azan Time (1.3.30 / vc57+) ad config, read once per cold start and cached. Every field optional. STRICTER-ONLY: enabled=false wins, country lists are ADDED to the built-in ones (both empty), caps never go below the built-in values (15 min apart, 2 a day, 1 a session, 3 min warm-up, 24 h new-install, 3 s after a tap). Country = saved prayer location OR device locale region OR time zone. Source: services/adRemoteConfig.ts in azanapp.",
+  "interstitial": {
+    "enabled": true,
+    "blockedCountries": [],
+    "minIntervalMin": 15,
+    "maxPerDay": 2,
+    "maxPerSession": 1,
+    "warmupMin": 3,
+    "newInstallHours": 24,
+    "tapQuietSec": 3
+  },
+  "banner": {
+    "enabled": true,
+    "blockedCountries": []
+  }
+}
