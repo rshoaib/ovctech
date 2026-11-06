@@ -1,0 +1,18 @@
+{
+  "$comment": "SpeakUp (2.5.2 / vc24+) ad config, read once per cold start and cached. Every field optional. STRICTER-ONLY: false switches win, country lists are ADDED to the built-in ones (interstitial: PK, KE), caps never go below the built-in values (15 min apart, 2 a day, 1 a session, 3 min warm-up, 24 h new-install, 5 s after a tap). adsEnabled=false turns banner + interstitial off everywhere. Country = device locale region OR time zone. Source: services/adRemoteConfig.ts.",
+  "adsEnabled": true,
+  "interstitial": {
+    "enabled": true,
+    "blockedCountries": ["PK", "KE"],
+    "minIntervalMin": 15,
+    "maxPerDay": 2,
+    "maxPerSession": 1,
+    "warmupMin": 3,
+    "newInstallHours": 24,
+    "tapQuietSec": 5
+  },
+  "banner": {
+    "enabled": true,
+    "blockedCountries": []
+  }
+}
