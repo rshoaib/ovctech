@@ -1,0 +1,16 @@
+{
+  "$comment": "Hala - Learn Emirati Arabic (1.8.2+ / vc40+) ad config, read once per cold start and cached. Every field optional. STRICTER-ONLY: caps are clamped in-app so this file can never loosen them (minIntervalMin >= 15, maxPerDay <= 2, maxPerSession <= 1, warmupMin >= 3, newInstallHours >= 24, tapQuietSec >= 4). blockedCountries is ADDED to the built-in list (ID, MC, DE; device locale region OR time zone). interstitial.enabled=false / banner.enabled=false switch that ad off everywhere. Source: services/adRemoteConfig.ts.",
+  "interstitial": {
+    "enabled": true,
+    "blockedCountries": ["ID", "MC", "DE"],
+    "minIntervalMin": 15,
+    "maxPerDay": 2,
+    "maxPerSession": 1,
+    "warmupMin": 3,
+    "newInstallHours": 24,
+    "tapQuietSec": 4
+  },
+  "banner": {
+    "enabled": true
+  }
+}
