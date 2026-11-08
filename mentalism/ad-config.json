@@ -3,8 +3,8 @@
   "homeInterstitial": {
     "enabled": true,
     "blockedCountries": ["ES", "BR", "HR", "DE", "GR"],
-    "minIntervalMin": 15,
-    "maxPerDay": 2,
+    "minIntervalMin": 10,
+    "maxPerDay": 3,
     "maxPerSession": 1,
     "warmupMin": 3,
     "newInstallHours": 24
