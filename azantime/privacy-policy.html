@@ -23,7 +23,7 @@
 <body>
     <div class="container">
         <h1>🕌 Azan Time — Privacy Policy</h1>
-        <span class="badge">Last updated: September 7, 2026</span>
+        <span class="badge">Last updated: November 9, 2026 &middot; describes Azan Time 1.3.31, the version on Google Play</span>
 
         <h2>Introduction</h2>
         <p>Azan Time ("we", "our", "the app") is a Muslim prayer times and Qibla compass app developed and published by <strong>Rizwan Shoaib</strong>. We take your privacy seriously. This policy explains what data we access, why, and how it's handled.</p>
@@ -56,7 +56,7 @@
         <h2>Third-Party Services</h2>
         <ul>
             <li>
-                <strong>Google AdMob</strong> — We display a single banner ad served by Google AdMob to support the free version of the app. When an ad is requested, Google and its partners may collect and process:
+                <strong>Google AdMob</strong> — We display a banner ad and an occasional full-screen (interstitial) ad served by Google AdMob to support the free version of the app. Interstitials are rate-limited inside the app (none in the first minutes after the app opens or in the first day after install, at most a few per day) and the app only ever tightens those limits from a small configuration file it fetches at start-up — it cannot loosen them. When an ad is requested, Google and its partners may collect and process:
                 <ul>
                     <li>Your Advertising ID (Google Advertising ID on Android, IDFA on iOS) — a resettable identifier that you can reset or disable in your device settings</li>
                     <li>Approximate location derived from your IP address</li>
@@ -79,6 +79,11 @@
             <li>
                 <strong>Firebase Performance Monitoring</strong> &mdash; app performance metrics such
                 as start-up time and network latency, plus device metadata and an IP-derived country.
+            </li>
+            <li>
+                <strong>Firebase Cloud Messaging</strong> &mdash; the Firebase SDK bundled with the app
+                registers a Firebase installation ID and a messaging token with Google when the app
+                starts. Prayer reminders and the adhan are scheduled on your device by the app itself.
             </li>
             <li><strong>OpenStreetMap (Overpass API)</strong> — We query OpenStreetMap to find nearby mosques. Only your approximate coordinates are sent to this public API. No personal data is transmitted.</li>
         </ul>
