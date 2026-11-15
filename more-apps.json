@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "updated": "2026-11-15",
+  "title": "More apps by Rizwan",
+  "hosts": {
+    "com.mentalismmastery.app": [
+      { "pkg": "tech.ovc.inkrush", "name": "Ink Rush", "line": "Stroop colour game that trains focus" },
+      { "pkg": "tech.ovc.microwin", "name": "MicroWin", "line": "Track one habit for 30 days" },
+      { "pkg": "tech.ovc.claritycam", "name": "ClarityCam", "line": "A 90-second daily speaking drill" }
+    ],
+    "com.azantime.app": [
+      { "pkg": "com.silentmode.app", "name": "Silent Mode", "line": "Auto-silence your phone at prayer times" },
+      { "pkg": "com.ovctech.mycash", "name": "MyCash", "line": "Offline cash book for daily hisab kitab" },
+      { "pkg": "com.fastingbuddy.app", "name": "Fasting Buddy", "line": "Intermittent fasting timer & calories" }
+    ],
+    "com.speakup.ai.coach": [
+      { "pkg": "com.ovctech.hunt", "name": "Hunt", "line": "Track every job application, offline" },
+      { "pkg": "tech.ovc.claritycam", "name": "ClarityCam", "line": "A 90-second daily speaking drill" },
+      { "pkg": "tech.ovc.microwin", "name": "MicroWin", "line": "Track one habit for 30 days" }
+    ],
+    "com.hala.emirati.arabic": [
+      { "pkg": "tech.ovc.expiro", "name": "Expiro", "line": "Track document & warranty expiry dates" },
+      { "pkg": "com.ovctech.mycash", "name": "MyCash", "line": "Offline cash book for daily hisab kitab" },
+      { "pkg": "com.silentmode.app", "name": "Silent Mode", "line": "Auto-silence by time, place or prayer" }
+    ]
+  }
+}
