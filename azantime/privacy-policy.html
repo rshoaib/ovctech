@@ -23,14 +23,14 @@
 <body>
     <div class="container">
         <h1>🕌 Azan Time — Privacy Policy</h1>
-        <span class="badge">Last updated: November 17, 2026 &middot; describes Azan Time 1.3.37, the version on Google Play</span>
+        <span class="badge">Last updated: November 18, 2026 &middot; describes Azan Time 1.3.39, the version on Google Play</span>
 
         <h2>Introduction</h2>
         <p>Azan Time ("we", "our", "the app") is a Muslim prayer times and Qibla compass app developed and published by <strong>Rizwan Shoaib</strong>. We take your privacy seriously. This policy explains what data we access, why, and how it's handled.</p>
 
         <h2>Data We Access</h2>
         <ul>
-            <li><strong>Location (GPS)</strong> — We access your device's location ONLY to calculate accurate prayer times and Qibla direction for your area. Your location is stored <strong>locally on your device only</strong> and is never transmitted to our servers.</li>
+            <li><strong>Location (GPS)</strong> — We access your device's location to calculate accurate prayer times and the Qibla direction for your area, and to find mosques near you. Your exact location is stored <strong>locally on your device only</strong> and is never transmitted to our servers. To find nearby mosques, the app sends an <strong>approximate location</strong> (your coordinates rounded to about 1&nbsp;km) to OpenStreetMap's Overpass API, a third-party service &mdash; see <em>Third-Party Services</em> below.</li>
             <li><strong>Device Sensors (Magnetometer)</strong> — We use the device compass sensor to determine the Qibla direction. This data is processed locally and never stored or transmitted.</li>
         </ul>
 
@@ -85,7 +85,7 @@
                 registers a Firebase installation ID and a messaging token with Google when the app
                 starts. Prayer reminders and the adhan are scheduled on your device by the app itself.
             </li>
-            <li><strong>OpenStreetMap (Overpass API)</strong> — We query OpenStreetMap to find nearby mosques. Only your approximate coordinates are sent to this public API. No personal data is transmitted.</li>
+            <li><strong>OpenStreetMap (Overpass API)</strong> — To show <em>Mosques Near Me</em> on the Qibla tab, the app asks OpenStreetMap's public Overpass API (overpass-api.de, with overpass.kumi.systems as a fallback) for mosques around you. For this, your <strong>approximate location</strong> &mdash; your coordinates rounded to 2 decimal places, about 1&nbsp;km &mdash; is <strong>shared with this third party</strong>. Your exact location is never sent; distances to each mosque are worked out on your device. No name, account or advertising ID is sent with the request, though, as with any web request, the server sees your IP address. The Overpass API is run by the OpenStreetMap community under its own privacy terms.</li>
         </ul>
             <p class="note" style="margin-top:12px">
                 Google acts as our service provider for the analytics and crash reporting above. That
