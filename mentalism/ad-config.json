@@ -6,7 +6,7 @@
     "minIntervalMin": 10,
     "maxPerDay": 3,
     "maxPerSession": 1,
-    "warmupMin": 3,
+    "warmupMin": 1,
     "newInstallHours": 24
   }
 }
