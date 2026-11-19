@@ -23,10 +23,19 @@
 <body>
     <div class="container">
         <h1>🕌 Azan Time — Privacy Policy</h1>
-        <span class="badge">Last updated: November 18, 2026 &middot; describes Azan Time 1.3.39, the version on Google Play</span>
+        <span class="badge">Last updated: November 20, 2026 &middot; describes Azan Time 1.3.39 on Google Play (Android) and on the App Store (iPhone)</span>
 
         <h2>Introduction</h2>
-        <p>Azan Time ("we", "our", "the app") is a Muslim prayer times and Qibla compass app developed and published by <strong>Rizwan Shoaib</strong>. We take your privacy seriously. This policy explains what data we access, why, and how it's handled.</p>
+        <p>Azan Time ("we", "our", "the app") is a Muslim prayer times and Qibla compass app developed and published by <strong>Rizwan Shoaib</strong>. We take your privacy seriously. This policy explains what data we access, why, and how it's handled. Everything below applies to both the Android and the iPhone app, except where the section <a href="#ios">On iPhone (iOS)</a> says otherwise.</p>
+
+        <h2 id="ios">On iPhone (iOS)</h2>
+        <ul>
+            <li><strong>No ads and no tracking.</strong> The iPhone app shows no advertising. Google AdMob (described below) does not run on iPhone, and the app does not read your device's advertising identifier (IDFA). Because the app does not track you across other companies' apps or websites, it never shows Apple's App Tracking Transparency prompt.</li>
+            <li><strong>Location</strong> is requested "While Using the App" only; the app has no background location access. As on Android, prayer times and the Qibla are calculated on your iPhone, and the mosque search sends only an approximate location (rounded to about 1&nbsp;km) to OpenStreetMap.</li>
+            <li><strong>Notifications</strong> are local: prayer alerts are scheduled on your iPhone by the app itself. There is no push-notification server and Firebase Cloud Messaging is not used on iPhone.</li>
+            <li><strong>Analytics and crash reports.</strong> Google Analytics for Firebase, Firebase Crashlytics and Firebase Performance Monitoring run on iPhone as described below, without the advertising identifier. They use an app-instance or installation identifier generated for this app.</li>
+            <li><strong>Deleting your data on iPhone:</strong> delete the app (touch and hold the app icon, then <em>Remove App &rarr; Delete App</em>). This removes your prayer log, tasbih count and settings, which are stored only on your iPhone.</li>
+        </ul>
 
         <h2>Data We Access</h2>
         <ul>
@@ -56,7 +65,7 @@
         <h2>Third-Party Services</h2>
         <ul>
             <li>
-                <strong>Google AdMob</strong> — We display a banner ad and an occasional full-screen (interstitial) ad served by Google AdMob to support the free version of the app. Interstitials are rate-limited inside the app (none in the first minutes after the app opens or in the first day after install, at most a few per day) and the app only ever tightens those limits from a small configuration file it fetches at start-up — it cannot loosen them. When an ad is requested, Google and its partners may collect and process:
+                <strong>Google AdMob (Android only)</strong> — In the Android app we display a banner ad and an occasional full-screen (interstitial) ad served by Google AdMob to support the free version of the app. Interstitials are rate-limited inside the app (none in the first minutes after the app opens or in the first day after install, at most a few per day) and the app only ever tightens those limits from a small configuration file it fetches at start-up — it cannot loosen them. When an ad is requested, Google and its partners may collect and process:
                 <ul>
                     <li>Your Advertising ID (Google Advertising ID on Android, IDFA on iOS) — a resettable identifier that you can reset or disable in your device settings</li>
                     <li>Approximate location derived from your IP address</li>
@@ -81,7 +90,7 @@
                 as start-up time and network latency, plus device metadata and an IP-derived country.
             </li>
             <li>
-                <strong>Firebase Cloud Messaging</strong> &mdash; the Firebase SDK bundled with the app
+                <strong>Firebase Cloud Messaging (Android only)</strong> &mdash; the Firebase SDK bundled with the app
                 registers a Firebase installation ID and a messaging token with Google when the app
                 starts. Prayer reminders and the adhan are scheduled on your device by the app itself.
             </li>
@@ -106,7 +115,7 @@
         <p><strong>How long we retain data:</strong> Local data (prayer settings, tracking history, preferences) is kept on your device for as long as the app is installed. There is no expiration — data persists until you choose to delete it.</p>
         <p><strong>How to delete your data:</strong></p>
         <ul>
-            <li>Go to your device's <strong>Settings → Apps → Azan Time → Storage → Clear Data</strong> to erase all locally stored app data.</li>
+            <li>Android: go to your device's <strong>Settings → Apps → Azan Time → Storage → Clear Data</strong> to erase all locally stored app data. iPhone: delete the app (see <a href="#ios">On iPhone</a>).</li>
             <li>Uninstalling the app will also permanently delete all associated data from your device.</li>
         </ul>
         <p>Since we do not collect or store any data on our servers, no further action is needed to delete your information. If you have any concerns, contact us at <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a>.</p>
